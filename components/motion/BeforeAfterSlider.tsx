@@ -8,7 +8,7 @@ interface BeforeAfterSliderProps {
   afterImage: string;
   beforeLabel?: string;
   afterLabel?: string;
-  clinicalNote?: string;
+  plumbingNote?: string;
   className?: string;
 }
 
@@ -17,7 +17,7 @@ export default function BeforeAfterSlider({
   afterImage,
   beforeLabel = 'Before the repair',
   afterLabel = 'After the repair',
-  clinicalNote,
+  plumbingNote,
   className = '',
 }: BeforeAfterSliderProps) {
   const [sliderPos, setSliderPos] = useState(50);
@@ -108,7 +108,7 @@ export default function BeforeAfterSlider({
         }}
         tabIndex={0}
         role="slider"
-        aria-label="Illustrative roofing image comparison"
+        aria-label="Illustrative plumbing image comparison"
         aria-valuenow={Math.round(sliderPos)}
         aria-valuemin={0}
         aria-valuemax={100}
@@ -161,9 +161,9 @@ export default function BeforeAfterSlider({
         </div>
       </div>
 
-      {clinicalNote && (
+      {plumbingNote && (
         <p className="font-body text-13 text-forest-ink/60 mt-3 max-w-full">
-          {clinicalNote}
+          {plumbingNote}
         </p>
       )}
     </div>

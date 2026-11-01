@@ -6,12 +6,12 @@ import Link from 'next/link';
 import { DentistProfile } from '@/lib/clinic-data';
 import AnimateOnScroll from '@/components/motion/AnimateOnScroll';
 
-interface DentistCardProps {
-  dentist: DentistProfile;
+interface PlumberCardProps {
+  plumber: DentistProfile;
   offsetY?: boolean;
 }
 
-export default function DentistCard({ dentist, offsetY = false }: DentistCardProps) {
+export default function PlumberCard({ plumber, offsetY = false }: PlumberCardProps) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -21,12 +21,12 @@ export default function DentistCard({ dentist, offsetY = false }: DentistCardPro
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        {/* Eddie’s Roofing logo */}
+        {/* JNF Plumbing Cairns logo */}
         <div className="relative w-full aspect-[4/5] bg-paper overflow-hidden border border-mist mb-5 rounded-none shadow-sm">
           {/* Full logo stays visible inside the profile frame */}
           <Image
-            src={dentist.image}
-            alt="Illustrative roofing project image"
+            src={plumber.image}
+            alt="Illustrative plumbing project image"
             fill
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
             className={`object-contain p-5 transition-all duration-500 ease-nova-ease ${
@@ -34,15 +34,15 @@ export default function DentistCard({ dentist, offsetY = false }: DentistCardPro
             }`}
           />
 
-          {dentist.qualifications && (
+          {plumber.qualifications && (
             <div className="absolute top-3 left-3 bg-paper/95 backdrop-blur-sm text-forest-ink font-body text-13 px-3 py-1 font-medium shadow-sm">
-              {dentist.qualifications}
+              {plumber.qualifications}
             </div>
           )}
 
-          {dentist.experienceYears > 0 && (
+          {plumber.experienceYears > 0 && (
             <div className="absolute bottom-3 right-3 bg-forest text-paper font-body text-13 px-2.5 py-0.5">
-              {dentist.experienceYears}+ years in the industry
+              {plumber.experienceYears}+ years in the industry
             </div>
           )}
         </div>
@@ -50,20 +50,20 @@ export default function DentistCard({ dentist, offsetY = false }: DentistCardPro
         {/* Typography block placed strictly below image */}
         <div>
           <span className="font-body text-13 text-forest block mb-1 font-medium">
-            {dentist.title}
+            {plumber.title}
           </span>
           <h3 className="font-display text-21 sm:text-24 md:text-26 text-forest-ink group-hover:text-forest transition-colors mb-2">
-            <Link href={`/team/${dentist.slug}/`} className="no-underline text-inherit">
-              {dentist.name}
+            <Link href={`/team/${plumber.slug}/`} className="no-underline text-inherit">
+              {plumber.name}
             </Link>
           </h3>
           <p className="font-body text-13 sm:text-15 text-forest-ink/80 leading-relaxed mb-3 line-clamp-2">
-            {dentist.specialization}
+            {plumber.specialization}
           </p>
 
           {/* Specialization Tags */}
           <div className="flex flex-wrap gap-1.5 pt-2 border-t border-mist/60">
-            {dentist.specialties.map((spec: string) => (
+            {plumber.specialties.map((spec: string) => (
               <span
                 key={spec}
                 className="font-body text-13 text-forest-ink/80 bg-mist/60 px-2 py-0.5"

@@ -11,10 +11,10 @@ export default function Footer() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 pb-16 border-b border-mist/20">
           <div className="lg:col-span-6">
             <div className="flex items-center gap-4 mb-5">
-              <div className="w-40 h-14 sm:w-48 sm:h-[70px] bg-[#050505] rounded-xl p-2 flex items-center justify-center flex-shrink-0 shadow-md">
+              <div className="w-40 h-14 sm:w-48 sm:h-[70px] bg-[#062B70] rounded-xl p-2 flex items-center justify-center flex-shrink-0 shadow-md">
                 <Image
-                  src="/images/eddies-roofing-logo.png"
-                  alt="Eddie’s Roofing logo"
+                  src="/images/jnf-plumbing-logo.png"
+                  alt="JNF Plumbing Cairns logo"
                   width={220}
                   height={80}
                   className="object-contain w-full h-full"
@@ -22,18 +22,18 @@ export default function Footer() {
               </div>
               <div className="flex flex-col">
                 <span className="font-display text-24 md:text-30 font-medium leading-tight">
-                  Eddie’s Roofing
+                  JNF Plumbing Cairns
                 </span>
                 <span className="font-body text-13 text-paper/70 font-medium">
-                  Roofing services
+                  Plumbing services
                 </span>
               </div>
             </div>
             <p className="font-body text-16 text-paper/80 leading-relaxed max-w-xl">
-              Roof restoration, cleaning and repairs for your property. Call to discuss your project.
+              Emergency plumbing, hot water and drainage for your property. Call to discuss your project.
             </p>
             <div className="mt-6 flex flex-wrap gap-4 text-13 text-paper/60">
-              <a href={`tel:${CLINIC_INFO.contact.phone.replace(/[^0-9+]/g, '')}`} className="hover:text-paper">{CLINIC_INFO.contact.phone}</a>{CLINIC_INFO.contact.website && <a href={CLINIC_INFO.contact.website} target="_blank" rel="noopener noreferrer" className="hover:text-paper">Eddie’s Roofing</a>}
+              <a href={`tel:${CLINIC_INFO.contact.phone.replace(/[^0-9+]/g, '')}`} className="hover:text-paper">{CLINIC_INFO.contact.phone}</a>{CLINIC_INFO.contact.website && <a href={CLINIC_INFO.contact.website} target="_blank" rel="noopener noreferrer" className="hover:text-paper">JNF Plumbing Cairns</a>}
               {CLINIC_INFO.contact.email && <a href={`mailto:${CLINIC_INFO.contact.email}`} className="hover:text-paper">{CLINIC_INFO.contact.email}</a>}
             </div>
           </div>
@@ -41,10 +41,10 @@ export default function Footer() {
           <div className="lg:col-span-6 lg:pl-12 flex flex-col justify-between">
             <div className="p-6 bg-paper/5 border border-mist/20 rounded-none shadow-sm">
               <span className="font-body text-13 text-lime block mb-2 font-semibold uppercase tracking-wider">
-                Roof restoration, cleaning and repairs
+                Emergency plumbing, hot water and drainage
               </span>
               <p className="font-body text-15 text-paper/90 mb-4">
-                Need a roof restored? Call our Shell Cove and surrounding areas team to discuss the work required.
+                Need plumbing help? Call our Cairns and surrounding areas team to discuss the work required.
               </p>
               <div className="flex flex-wrap items-center gap-4">
                 <a
@@ -68,7 +68,7 @@ export default function Footer() {
 
         {/* Middle Section: Complete Internal Linking Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 py-16 border-b border-mist/20">
-          {/* Column 1: technical Treatments */}
+          {/* Column 1: technical Services */}
           <div className="col-span-1">
             <span className="font-body text-13 text-paper/40 uppercase tracking-wider block mb-4 font-semibold">
               Services
@@ -90,12 +90,12 @@ export default function Footer() {
           {/* Column 2: technical Team */}
           <div className="col-span-1">
             <span className="font-body text-13 text-paper/40 uppercase tracking-wider block mb-4 font-semibold">
-              Eddie’s Roofing
+              JNF Plumbing Cairns
             </span>
             <ul className="space-y-2.5 font-body text-15">
               <li>
                 <Link href="/about/" className="text-paper/80 hover:text-lime transition-colors">
-                  Eddie’s Roofing
+                  JNF Plumbing Cairns
                 </Link>
               </li>
               {DENTISTS.map((d) => (
@@ -124,12 +124,12 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/services/" className="text-paper/80 hover:text-lime transition-colors">
-                  Roof restoration, cleaning and repairs
+                  Emergency plumbing, hot water and drainage
                 </Link>
               </li>
               <li>
-                <Link href="/roofing-advice/" className="text-paper/80 hover:text-lime transition-colors">
-                  Roofing advice tips
+                <Link href="/plumbing-advice/" className="text-paper/80 hover:text-lime transition-colors">
+                  Plumbing advice
                 </Link>
               </li>
               <li>
@@ -170,7 +170,7 @@ export default function Footer() {
               <div>
                 <span className="text-paper/50 block text-13">Address:</span>
                 <address className="not-italic leading-relaxed text-13 text-paper/70">
-                  11 Windjammer Cres, Shell Cove NSW 2529, Australia
+                  11 Windjammer Cres, Cairns QLD 4870, Australia
                 </address>
               </div>
             </div>
@@ -183,7 +183,7 @@ export default function Footer() {
             © {new Date().getFullYear()} {CLINIC_INFO.legalName}. All rights reserved.
           </div>
           <div className="flex items-center gap-6">
-            <a href="/" className="hover:text-paper">Eddie’s Roofing</a>
+            <a href="/" className="hover:text-paper">JNF Plumbing Cairns</a>
           </div>
         </div>
       </div>

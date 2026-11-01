@@ -10,7 +10,7 @@ import { createMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = createMetadata({
   title: 'Customer reviews',
-  description: 'Read customer reviews for Eddie’s Roofing.',
+  description: 'Read customer reviews for JNF Plumbing Cairns.',
   pathname: '/reviews/',
 });
 
@@ -23,9 +23,9 @@ export default function TestimonialsPage() {
           <Breadcrumbs items={[{ name: 'Reviews', path: '/reviews/' }]} />
           <div className="mt-8 max-w-3xl">
             <AnimateOnScroll animation="fade-right" duration={0.8}>
-              <span className="mb-3 block font-body text-13 font-medium uppercase tracking-wider text-forest-ink/60">Eddie’s Roofing</span>
+              <span className="mb-3 block font-body text-13 font-medium uppercase tracking-wider text-forest-ink/60">JNF Plumbing Cairns</span>
               <WordRevealH1 text="Customer reviews" />
-              <p className="mt-6 max-w-2xl font-body text-17 leading-relaxed text-forest-ink/90 md:text-21">5.0-star Google rating · 21 customer reviews.</p>
+              <p className="mt-6 max-w-2xl font-body text-17 leading-relaxed text-forest-ink/90 md:text-21">85 Google reviews for JNF Plumbing Cairns.</p>
             </AnimateOnScroll>
           </div>
         </div>
@@ -39,7 +39,7 @@ export default function TestimonialsPage() {
             </div>
             <div className="border-l-2 border-brand pl-4">
               <span className="block font-body text-13 font-medium uppercase tracking-wider text-forest-light">Google reviews</span>
-              <span className="mt-1 block font-body text-12 text-forest-light">21 reviews</span>
+              <span className="mt-1 block font-body text-12 text-forest-light">85 reviews</span>
             </div>
           </div>
           <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
@@ -60,7 +60,7 @@ export default function TestimonialsPage() {
       </section>
       <section className="bg-forest py-14 text-paper md:py-20">
         <div className="mx-auto flex max-w-site flex-col items-start justify-between gap-6 px-6 md:flex-row md:items-center md:px-12">
-          <div><span className="mb-2 block font-body text-13 font-semibold uppercase tracking-wider text-paper/65">Eddie’s Roofing</span><h2 className="font-display text-26 md:text-33">Need roof repairs?</h2></div>
+          <div><span className="mb-2 block font-body text-13 font-semibold uppercase tracking-wider text-paper/65">JNF Plumbing Cairns</span><h2 className="font-display text-26 md:text-33">Need plumbing repairs?</h2></div>
           <Link href="/quote/" className="inline-flex min-h-12 items-center justify-center border border-paper bg-paper px-6 font-body text-15 font-semibold text-forest transition-colors hover:bg-softBlue">Request a quote</Link>
         </div>
       </section>

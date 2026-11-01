@@ -30,10 +30,10 @@ export default function HomeLocation() {
                   {CLINIC_INFO.name}
                 </h3>
                 <p className="font-body text-15 text-forest-ink/90 leading-relaxed mb-2">
-                  Roofing service
+                  Plumbing service
                 </p>
                 <p className="font-body text-15 md:text-17 text-forest-ink/90 leading-relaxed mb-4">
-                  Based in Shell Cove, Eddie’s Roofing serves Shell Cove, Shellharbour and surrounding areas. Call to discuss your roof and current availability.
+                  Based in Cairns, JNF Plumbing Cairns serves Cairns, Brinsmead and surrounding areas. Call to discuss your plumbing and current availability.
                 </p>
                 {CLINIC_INFO.primaryLocation.landmarks && (
                   <p className="font-body text-13 text-forest-ink/70 leading-relaxed">
@@ -42,7 +42,7 @@ export default function HomeLocation() {
                 )}
                 <div className="flex flex-wrap gap-2 mt-4">
                   {CLINIC_INFO.identityHighlights.map((highlight) => (
-                    <span key={highlight} className="bg-[#F3F4F5] border border-[#D9DDE0] px-3 py-1.5 text-12 text-[#151515]">
+                    <span key={highlight} className="bg-[#F3F6FA] border border-[#D9E2EF] px-3 py-1.5 text-12 text-[#101828]">
                       {highlight}
                     </span>
                   ))}
@@ -87,14 +87,14 @@ export default function HomeLocation() {
             <AnimateOnScroll animation="fade-left" duration={0.85}>
               <div className="relative aspect-[16/10] bg-mist overflow-hidden border border-mist shadow-sm">
                 <Image
-                  src="/images/roofing-hero.png"
-                  alt="Roofing project"
+                  src="/images/plumbing-technician.jpg"
+                  alt="Plumbing project"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
                     className="object-cover"
                 />
                 <div className="absolute bottom-3 left-3 bg-paper/95 backdrop-blur-sm text-forest-ink font-body text-13 px-3 py-1 font-medium border border-mist/50">
-                  Eddie’s Roofing
+                  JNF Plumbing Cairns
                 </div>
               </div>
             </AnimateOnScroll>
@@ -103,10 +103,10 @@ export default function HomeLocation() {
               <div className="bg-paper border border-mist p-6 shadow-sm flex flex-col justify-between">
                 <div>
                   <span className="font-body text-13 text-forest block mb-1 font-medium uppercase tracking-wider">
-                    Roofing services
+                    Plumbing services
                   </span>
                   <h3 className="font-display text-21 text-forest-ink mb-2">
-                    Roof restoration for your property
+                    Plumbing repairs for your property
                   </h3>
                   <p className="font-body text-13 text-forest-ink/80 mb-3 leading-relaxed">
                     Call to discuss the property service you need.

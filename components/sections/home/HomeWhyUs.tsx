@@ -10,15 +10,15 @@ const REASONS = [
   },
   {
     title: 'Agreeing on the job scope',
-    description: 'Discuss the work scope and timing for your roofing.',
+    description: 'We explain the options, scope and timing before work begins.',
   },
   {
     title: 'Planning the next steps',
-    description: 'We will discuss the job, quote and next steps for your project.',
+    description: 'You will know the quote, agreed work and next steps.',
   },
   {
-    title: 'Roofing for your property',
-    description: 'Eddie’s Roofing offers professional roofing services. Call to discuss your project and the work required.',
+    title: 'Plumbing for your property',
+    description: 'JNF Plumbing Cairns offers professional plumbing services. Call to discuss your project and the work required.',
   },
 ];
 
@@ -34,7 +34,7 @@ export default function HomeWhyUs() {
                 How we work
               </span>
               <h2 className="font-display text-26 sm:text-33 md:text-41 text-forest-ink mb-8 md:mb-10 leading-tight">
-                Roofing discussed clearly
+                Plumbing discussed clearly
               </h2>
 
               <div className="divide-y divide-mist">
@@ -65,38 +65,38 @@ export default function HomeWhyUs() {
                 <div className="col-span-2 relative aspect-[16/10] bg-mist overflow-hidden border border-mist shadow-sm">
                   <MediaParallax speed={0.06} className="w-full h-full">
                     <Image
-                    src="/images/roofing-hero.png"
-                    alt="Roofing project"
+                    src="/images/plumbing-technician.jpg"
+                    alt="Plumbing project"
                       fill
                       sizes="(max-width: 1024px) 100vw, 50vw"
                       className="object-cover"
                     />
                   </MediaParallax>
-                  <div className="absolute bottom-3 left-3 bg-[#C8CDD1]/90 backdrop-blur-sm text-[#151515] font-body text-12 px-3 py-1 font-medium">
-                    Roofing
+                  <div className="absolute bottom-3 left-3 bg-[#062B70]/90 backdrop-blur-sm text-[#101828] font-body text-12 px-3 py-1 font-medium">
+                    Plumbing
                   </div>
                 </div>
                 {/* Additional home repairs imagery */}
                 <div className="col-span-2 sm:col-span-1 relative aspect-square bg-mist overflow-hidden border border-mist shadow-sm">
                   <Image
-                    src="/images/roof-repair.png"
-                    alt="Roofing project"
+                    src="/images/plumbing-repair.jpg"
+                    alt="Plumbing project"
                     fill
                     sizes="(max-width: 640px) 100vw, 25vw"
                     className="object-cover"
                   />
                 </div>
-                {/* Roofing project detail */}
-                <div className="col-span-2 sm:col-span-1 relative aspect-square bg-[#F3F4F5] overflow-hidden border border-mist shadow-sm">
+                {/* Plumbing project detail */}
+                <div className="col-span-2 sm:col-span-1 relative aspect-square bg-[#F3F6FA] overflow-hidden border border-mist shadow-sm">
                   <Image
-                    src="/images/roofb3-1.jpg"
-                    alt="Roofing"
+                    src="/images/plumbing-pipes.jpg"
+                    alt="Plumbing"
                     fill
                     sizes="(max-width: 640px) 100vw, 25vw"
                     className="object-cover object-top"
                   />
-                  <div className="absolute bottom-0 left-0 right-0 bg-[#C8CDD1]/80 text-[#151515] font-body text-12 px-3 py-2 text-center">
-                     Roofing
+                  <div className="absolute bottom-0 left-0 right-0 bg-[#062B70]/80 text-[#101828] font-body text-12 px-3 py-2 text-center">
+                     Plumbing
                   </div>
                 </div>
               </div>

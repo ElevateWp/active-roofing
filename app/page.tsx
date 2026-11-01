@@ -5,8 +5,8 @@ import HomeStats from '@/components/sections/home/HomeStats';
 import HomeReviews from '@/components/sections/home/HomeReviews';
 import PinnedHorizontalTrack, { HorizontalTrackItem } from '@/components/motion/PinnedHorizontalTrack';
 import HomeWhyUs from '@/components/sections/home/HomeWhyUs';
-import HomeDentists from '@/components/sections/home/HomeDentists';
-import HomeFeaturedTreatments from '@/components/sections/home/HomeFeaturedTreatments';
+import HomePlumbers from '@/components/sections/home/HomeDentists';
+import HomeFeaturedServices from '@/components/sections/home/HomeFeaturedTreatments';
 import HomeBeforeAfter from '@/components/sections/home/HomeBeforeAfter';
 import HomeGallery from '@/components/sections/home/HomeGallery';
 import HomeFaqs from '@/components/sections/home/HomeFaqs';
@@ -17,9 +17,9 @@ import { SERVICES } from '@/lib/clinic-data';
 import { createMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Eddie’s Roofing',
+  title: 'JNF Plumbing Cairns',
   description:
-    'Roof restoration, roof cleaning, painting, repointing and tile repairs in Shell Cove and surrounding areas. Call +61 431 721 599 to request a quote.',
+    'Emergency plumbing, leak repairs, hot water systems, blocked drains and plumbing inspections in Cairns. Call +61 417 890 910.',
   pathname: '/',
 });
 
@@ -44,10 +44,10 @@ export default function HomePage() {
       {/* SECTION 2A: Customer reviews */}
       <HomeReviews />
 
-      {/* SECTION 3: Roofing services */}
+      {/* SECTION 3: Plumbing services */}
       <PinnedHorizontalTrack
         items={serviceTrackItems}
-        title="Roofing services"
+        title="Plumbing services"
       />
 
       {/* Signature Brand Device 2 of 4: Full-Bleed Section Divider */}
@@ -55,19 +55,19 @@ export default function HomePage() {
         <TextureBackground variant="divider" className="opacity-30" />
       </div>
 
-      {/* SECTION 4: Why choose Eddie’s Roofing Shell Cove and surrounding areas Shell Cove and surrounding areas */}
+      {/* SECTION 4: Why choose JNF Plumbing Cairns */}
       <HomeWhyUs />
 
       {/* SECTION 5: About the business */}
-      <HomeDentists />
+      <HomePlumbers />
 
       {/* SECTION 6: Services em destaque */}
-      <HomeFeaturedTreatments />
+      <HomeFeaturedServices />
 
       {/* SECTION 7: Before & After (Draggable Slider - Orchestrated Moment 3) */}
       <HomeBeforeAfter />
 
-      {/* SECTION 9: Roofing services Projects */}
+      {/* SECTION 9: Plumbing services Projects */}
       <HomeGallery />
 
       {/* SECTION 10: Frequently asked questions */}

@@ -9,27 +9,27 @@ if (typeof window !== 'undefined') {
   gsap.registerPlugin(ScrollTrigger);
 }
 
-export interface ProcedureStep {
+export interface JobStep {
   stepNumber: number;
   title: string;
   duration: string;
   description: string;
-  clinicalDetails: string;
+  plumbingDetails: string;
 }
 
-interface ProcedurePinProps {
-  steps: ProcedureStep[];
+interface JobPinProps {
+  steps: JobStep[];
   title?: string;
   subtitle?: string;
   className?: string;
 }
 
-export default function ProcedurePin({
+export default function JobPin({
   steps,
-  title = 'Roofing project steps',
-  subtitle = 'Roofing project steps',
+  title = 'Plumbing project steps',
+  subtitle = 'Plumbing project steps',
   className = '',
-}: ProcedurePinProps) {
+}: JobPinProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [activeStep, setActiveStep] = useState(0);
 
@@ -38,7 +38,7 @@ export default function ProcedurePin({
     if (typeof window === 'undefined' || window.innerWidth < 1024) return;
 
     const ctx = gsap.context(() => {
-      const stepElements = containerRef.current?.querySelectorAll('.procedure-step-item');
+      const stepElements = containerRef.current?.querySelectorAll('.job-step-item');
       if (!stepElements) return;
 
       stepElements.forEach((stepEl, idx) => {
@@ -80,7 +80,7 @@ export default function ProcedurePin({
                 Estimated duration: {steps[activeStep]?.duration}
               </div>
               <p className="font-body text-15 text-forest-ink/80 leading-relaxed mb-6">
-                {steps[activeStep]?.clinicalDetails}
+                {steps[activeStep]?.plumbingDetails}
               </p>
 
               {/* Step Progress Vertical Timeline */}
@@ -108,12 +108,12 @@ export default function ProcedurePin({
             </div>
           </div>
 
-          {/* Right Column: Detailed Procedure Flow (Scrolls on desktop, clean responsive stack on mobile) */}
+          {/* Right Column: Detailed Job Flow (Scrolls on desktop, clean responsive stack on mobile) */}
           <div className="w-full lg:col-span-7 flex flex-col space-y-8 md:space-y-12 lg:space-y-16">
             {steps.map((step, idx) => (
               <div
                 key={step.stepNumber}
-                className={`procedure-step-item p-6 sm:p-8 border border-mist bg-paper/60 transition-all duration-300 ${
+                className={`job-step-item p-6 sm:p-8 border border-mist bg-paper/60 transition-all duration-300 ${
                   activeStep === idx ? 'border-forest/50 shadow-sm' : 'opacity-90'
                 }`}
               >
@@ -132,7 +132,7 @@ export default function ProcedurePin({
                 <div className="p-3.5 sm:p-4 bg-mist/40 border-l-2 border-forest">
                   <span className="font-body text-13 text-forest-ink/80 block">
                     <strong className="text-forest font-medium">Detalhes:</strong>{' '}
-                    {step.clinicalDetails}
+                    {step.plumbingDetails}
                   </span>
                 </div>
               </div>

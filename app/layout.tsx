@@ -11,19 +11,19 @@ import { BASE_URL, generateLocalBusinessSchema } from '@/lib/seo';
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: 'Eddie’s Roofing | Roof restoration',
+    default: 'JNF Plumbing Cairns | Cairns plumber',
     template: '%s',
   },
   description:
-    'Eddie’s Roofing provides roof restoration, cleaning, painting, repointing and tile repairs in Shell Cove and surrounding areas. Call +61 431 721 599.',
+    'JNF Plumbing Cairns provides emergency plumbing, leak repairs, hot water systems and drainage services across Cairns. Call +61 417 890 910.',
   keywords: [
-    'Eddie’s Roofing',
-    'roof restoration Shell Cove',
-    'roof cleaning Shell Cove and surrounding areas',
-    'roof painting Shell Cove',
-    'roof repointing Sydney',
+    'JNF Plumbing Cairns',
+    'plumbing repairs Cairns',
+    'blocked drain clearing Cairns and surrounding areas',
+    'hot water system repairs Cairns',
+    'leak repairs Cairns',
   ],
-  authors: [{ name: 'Eddie’s Roofing' }],
+  authors: [{ name: 'JNF Plumbing Cairns' }],
   icons: {
     icon: [
       { url: '/favicon.png', type: 'image/png' },
@@ -50,7 +50,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="bg-paper text-forest-ink min-h-screen flex flex-col selection:bg-[#F3F4F5] selection:text-[#151515]">
+      <body className="bg-paper text-forest-ink min-h-screen flex flex-col selection:bg-[#F3F6FA] selection:text-[#101828]">
         <PagePreloader />
         <SiteTextReveal />
         <JsonLd data={generateLocalBusinessSchema()} />

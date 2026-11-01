@@ -8,18 +8,18 @@ import { CLINIC_INFO } from '@/lib/clinic-data';
 const HOME_FAQS: AccordionItem[] = [
   {
     question: 'What services are available?',
-    answer: 'Ask about roof repairs and other roofing services. Call to discuss your roof and the work required.',
+    answer: 'Ask about plumbing repairs and other plumbing services. Call to discuss your plumbing and the work required.',
     relatedLink: { href: '/services/', label: 'Explore our services →' },
   },
   {
-    question: 'What areas does Eddie’s Roofing service?',
-    answer: 'The team serves Shell Cove and surrounding areas from Shell Cove. Call to discuss your property and availability.',
+    question: 'What areas does JNF Plumbing Cairns service?',
+    answer: 'The team serves Cairns and surrounding areas from Cairns. Call to discuss your property and availability.',
     relatedLink: { href: '/contact/', label: 'Contact our team →' },
   },
   {
-    question: 'How do I arrange a roof repair?',
-    answer: 'Call +61 431 721 599 to discuss your roof restoration, cleaning, painting, repointing or tile repair.',
-    relatedLink: { href: '/roof-restoration/', label: 'Explore our services →' },
+    question: 'How do I arrange a plumbing repair?',
+    answer: 'Call +61 417 890 910 to discuss leaks, hot water, drainage or other plumbing work.',
+    relatedLink: { href: '/emergency-plumbing/', label: 'Explore our services →' },
   },
   {
     question: 'How do I request a quote?',

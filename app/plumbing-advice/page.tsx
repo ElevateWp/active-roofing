@@ -9,10 +9,10 @@ import AnimateOnScroll from '@/components/motion/AnimateOnScroll';
 import { createMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Roofing advice',
+  title: 'Plumbing advice',
   description:
-    'Roofing advice information from Eddie’s Roofing.',
-  pathname: '/roofing-advice/',
+    'Plumbing advice information from JNF Plumbing Cairns.',
+  pathname: '/plumbing-advice/',
 });
 
 export default function BlogIndexPage() {
@@ -23,17 +23,17 @@ export default function BlogIndexPage() {
         <TextureBackground variant="blog" className="opacity-20" />
 
         <div className="relative z-10 max-w-site mx-auto px-6 md:px-12">
-          <Breadcrumbs items={[{ name: 'Roofing advice', path: '/roofing-advice/' }]} />
+          <Breadcrumbs items={[{ name: 'Plumbing advice', path: '/plumbing-advice/' }]} />
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mt-8">
             <div className="lg:col-span-8">
               <AnimateOnScroll animation="fade-right" duration={0.8}>
                 <span className="font-body text-13 text-forest-ink/60 block mb-3 uppercase tracking-wider font-medium">
-                  Roofing advice
+                  Plumbing advice
                 </span>
-                <WordRevealH1 text="Practical roofing advice for your home." />
+                <WordRevealH1 text="Practical plumbing advice for your home." />
                 <p className="font-body text-17 md:text-21 text-forest-ink/90 leading-relaxed mt-6 max-w-2xl">
-                  Read practical information about roof repairs and roof maintenance.
+                  Read practical information about plumbing repairs and plumbing maintenance.
                 </p>
               </AnimateOnScroll>
             </div>
@@ -60,7 +60,7 @@ export default function BlogIndexPage() {
                       {/* Title & Excerpt */}
                       <div className="lg:col-span-7">
                         <h2 className="font-display text-21 md:text-26 text-forest-ink group-hover:text-forest transition-colors mb-2">
-                          <Link href={`/roofing-advice/${post.slug}/`} className="no-underline text-inherit">
+                          <Link href={`/plumbing-advice/${post.slug}/`} className="no-underline text-inherit">
                             {post.title}
                           </Link>
                         </h2>
@@ -77,7 +77,7 @@ export default function BlogIndexPage() {
                       {/* Action */}
                       <div className="lg:col-span-2 text-left lg:text-right">
                         <Link
-                          href={`/roofing-advice/${post.slug}/`}
+                          href={`/plumbing-advice/${post.slug}/`}
                           className="font-body text-13 text-forest font-medium underline underline-offset-4 group-hover:text-forest-light"
                         >
                           Read Article →

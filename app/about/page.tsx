@@ -9,37 +9,37 @@ import MediaParallax from '@/components/motion/MediaParallax';
 import AnimateOnScroll from '@/components/motion/AnimateOnScroll';
 import Breadcrumbs from '@/components/layout/Breadcrumbs';
 import Button from '@/components/ui/Button';
-import DentistCard from '@/components/sections/dentists/DentistCard';
+import PlumberCard from '@/components/sections/dentists/DentistCard';
 import { CLINIC_INFO, DENTISTS } from '@/lib/clinic-data';
 import { createMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = createMetadata({
-  title: 'About Eddie’s Roofing',
+  title: 'About JNF Plumbing Cairns',
   description:
-    'Learn about Eddie’s Roofing and its roof restoration services.',
+    'Learn about JNF Plumbing Cairns and its plumbing repairs services.',
   pathname: '/about/',
 });
 
 const TIMELINE = [
   {
-    year: 'Shell Cove and surrounding areas',
-    title: 'Roofing service',
-    description: 'Eddie’s Roofing provides roof restoration, cleaning, painting, repointing and tile repairs.',
+    year: 'Cairns and surrounding areas',
+    title: 'Plumbing service',
+    description: 'JNF Plumbing Cairns helps with burst pipes, leak repairs, hot water systems, blocked drains and plumbing inspections.',
   },
 ];
 
 const APPROACH_STEPS = [
   {
-    title: 'Discuss your roofing',
-    description: 'We discuss the roof, the work required and practical project details.',
+    title: 'Discuss your plumbing',
+    description: 'We discuss the plumbing, the work required and practical project details.',
   },
   {
     title: 'Agree the project scope',
-    description: 'Discuss the roofing work, materials and timing before work begins.',
+    description: 'Discuss the plumbing work, materials and timing before work begins.',
   },
   {
     title: 'Complete the agreed work',
-    description: 'The agreed roofing work is completed with care.',
+    description: 'The agreed plumbing work is completed with care.',
   },
   {
     title: 'Clear communication',
@@ -59,11 +59,11 @@ export default function AboutPage() {
             <div className="lg:col-span-8">
               <AnimateOnScroll animation="fade-right" duration={0.8}>
                 <span className="font-body text-13 text-forest-ink/60 block mb-3 font-medium uppercase tracking-wider">
-                  About Eddie’s Roofing
+                  About JNF Plumbing Cairns
                 </span>
-                <WordRevealH1 text="Roof restoration for Shell Cove and surrounding areas." />
+                <WordRevealH1 text="Plumbing repairs for Cairns and surrounding areas." />
                 <div className="mt-8">
-                  <ScrubbedParagraph text="Eddie’s Roofing focuses on roof restoration, cleaning, painting, repointing and tile repairs. Call to discuss your property and request a quote." />
+                  <ScrubbedParagraph text="JNF Plumbing Cairns helps with burst pipes, leak repairs, hot water systems, blocked drains and plumbing inspections. Call to discuss your job and request a quote." />
                 </div>
               </AnimateOnScroll>
             </div>
@@ -73,7 +73,7 @@ export default function AboutPage() {
                 <div className="p-6 bg-paper border border-mist space-y-3 font-body text-13 text-forest-ink/80 shadow-sm">
                   <div className="flex justify-between border-b border-mist pb-2">
                     <span>Call</span>
-                    <span className="font-medium text-forest">+61 431 721 599</span>
+                    <span className="font-medium text-forest">+61 417 890 910</span>
                   </div>
                 </div>
               </AnimateOnScroll>
@@ -91,7 +91,7 @@ export default function AboutPage() {
                 About the business
               </span>
               <h2 className="font-display text-33 md:text-41 text-paper">
-                Roofing for your property
+                Plumbing for your property
               </h2>
             </div>
           </AnimateOnScroll>
@@ -106,7 +106,7 @@ export default function AboutPage() {
               >
                 {/* Year Marker */}
                 <div className="absolute -left-[41px] md:-left-[57px] top-1 w-5 h-5 rounded-full bg-forest border-2 border-lime flex items-center justify-center" />
-                <span className="font-display text-21 text-[#5F6368] block mb-1">
+                <span className="font-display text-21 text-[#64748B] block mb-1">
                   {item.year}
                 </span>
                 <h3 className="font-display text-21 md:text-26 text-paper mb-2">
@@ -161,7 +161,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* SECTION 4: Eddie’s Roofing */}
+      {/* SECTION 4: JNF Plumbing Cairns */}
       <section className="py-20 md:py-32 border-b border-mist">
         <div className="max-w-site mx-auto px-6 md:px-12">
           <AnimateOnScroll animation="fade-up" duration={0.8}>
@@ -171,7 +171,7 @@ export default function AboutPage() {
                   Our team
                 </span>
                 <h2 className="font-display text-33 md:text-41 text-forest-ink">
-                  Eddie’s Roofing
+                  JNF Plumbing Cairns
                 </h2>
               </div>
               <Link
@@ -184,14 +184,14 @@ export default function AboutPage() {
           </AnimateOnScroll>
 
           <div className="grid grid-cols-1 max-w-sm mx-auto">
-            {DENTISTS.map((dentist, idx) => (
-              <DentistCard key={dentist.id} dentist={dentist} offsetY={idx === 1} />
+            {DENTISTS.map((plumber, idx) => (
+              <PlumberCard key={plumber.id} plumber={plumber} offsetY={idx === 1} />
             ))}
           </div>
         </div>
       </section>
 
-      {/* SECTION 5: Roofing services Work */}
+      {/* SECTION 5: Plumbing services Work */}
       <section className="py-20 md:py-32 border-b border-mist overflow-hidden">
         <div className="max-w-site mx-auto px-6 md:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -201,10 +201,10 @@ export default function AboutPage() {
                   Our services
                 </span>
                 <h2 className="font-display text-33 md:text-41 text-forest-ink mb-6">
-                  Roofing work for your property
+                  Plumbing work for your property
                 </h2>
                 <p className="font-body text-15 md:text-17 text-forest-ink/80 leading-relaxed mb-6">
-                  Contact Eddie’s Roofing to discuss your roof, the work required and the next steps.
+                  Contact JNF Plumbing Cairns to discuss your plumbing, the work required and the next steps.
                 </p>
                 <div className="space-y-2 font-body text-13 text-forest-ink/70">
                   <div className="flex items-center gap-2">
@@ -224,15 +224,15 @@ export default function AboutPage() {
                 <div className="relative aspect-[4/3] bg-mist overflow-hidden border border-mist shadow-sm">
                   <MediaParallax speed={0.08} className="w-full h-full">
                     <Image
-                      src="/images/roofing-hero.png"
-                      alt="Roofing work in progress"
+                      src="/images/plumbing-technician.jpg"
+                      alt="Plumbing work in progress"
                       fill
                       sizes="(max-width: 1024px) 100vw, 50vw"
                       className="object-cover"
                     />
                   </MediaParallax>
                   <div className="absolute bottom-3 left-3 bg-paper/95 backdrop-blur-sm text-forest-ink font-body text-13 px-3 py-1 font-medium border border-mist/50">
-                    Roofing
+                    Plumbing
                   </div>
                 </div>
               </AnimateOnScroll>
@@ -259,42 +259,42 @@ export default function AboutPage() {
             <AnimateOnScroll animation="zoom-in" delay={0.1}>
               <div className="relative aspect-[4/3] bg-mist overflow-hidden border border-mist shadow-sm">
                 <Image
-                  src="/images/roof-repair.png"
-                  alt="Illustrative roofing"
+                  src="/images/plumbing-repair.jpg"
+                  alt="Illustrative plumbing"
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-cover"
                 />
                 <div className="absolute bottom-2 left-2 bg-paper/95 backdrop-blur-sm text-forest-ink font-body text-13 px-2.5 py-0.5 border border-mist/50">
-                  Illustrative roofing image
+                  Illustrative plumbing image
                 </div>
               </div>
             </AnimateOnScroll>
             <AnimateOnScroll animation="zoom-in" delay={0.2}>
               <div className="relative aspect-[4/3] bg-mist overflow-hidden border border-mist shadow-sm">
                 <Image
-                  src="/images/roofb3-1.jpg"
-                  alt="Illustrative roofing image"
+                  src="/images/plumbing-pipes.jpg"
+                  alt="Illustrative plumbing image"
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-cover"
                 />
                 <div className="absolute bottom-2 left-2 bg-paper/95 backdrop-blur-sm text-forest-ink font-body text-13 px-2.5 py-0.5 border border-mist/50">
-                  Roofing services
+                  Plumbing services
                 </div>
               </div>
             </AnimateOnScroll>
             <AnimateOnScroll animation="zoom-in" delay={0.3}>
               <div className="relative aspect-[4/3] bg-mist overflow-hidden border border-mist shadow-sm">
                 <Image
-                  src="/images/roof-saffron-walden-1024x768-1.jpg"
-                  alt="Illustrative roofing"
+                  src="/images/plumbing-hot-water.jpg"
+                  alt="Illustrative plumbing"
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-cover"
                 />
                 <div className="absolute bottom-2 left-2 bg-paper/95 backdrop-blur-sm text-forest-ink font-body text-13 px-2.5 py-0.5 border border-mist/50">
-                  Roofing repairs
+                  Plumbing repairs
                 </div>
               </div>
             </AnimateOnScroll>

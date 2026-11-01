@@ -37,7 +37,7 @@ export default function Demo(props: Partial<typeof settings>) {
         [data-sublime-category]{font-size:12px;line-height:1.5;color:#71766f;}
         [data-sublime-eyebrow]{position:absolute;inset:auto 24px calc(100% - var(--gp-word-top,35%) + 32px);margin:0;text-align:center;font-size:13px;font-weight:400;line-height:1.5;letter-spacing:.005em;color:#71766f;}
         [data-sublime-support]{position:absolute;inset:calc(var(--gp-word-bottom,50%) + 32px) 24px auto;margin:0;text-align:center;font-size:16px;font-weight:400;line-height:1.5;color:#646a63;}
-        [data-sublime-scroll]{position:absolute;inset:auto 24px 7%;text-align:center;color:#5F6368;font-size:11px;letter-spacing:.01em;}
+        [data-sublime-scroll]{position:absolute;inset:auto 24px 7%;text-align:center;color:#64748B;font-size:11px;letter-spacing:.01em;}
         @media(any-pointer:coarse){[data-sublime-scroll]{bottom:13%;}}
         @container(max-width:450px){[data-sublime-category]{max-width:12ch;text-align:right;}[data-sublime-eyebrow]{font-size:12px;}[data-sublime-support]{font-size:14px;}[data-slipstream-demo] [data-gp-caption]{top:calc(var(--gp-word-bottom,50%) + 76px);}}
         @container(max-height:479px){[data-sublime-header]{top:18px;}[data-sublime-support]{top:calc(var(--gp-word-bottom,50%) + 16px);}[data-slipstream-demo] [data-gp-caption]{top:calc(var(--gp-word-bottom,50%) + 60px);}[data-sublime-scroll]{display:none;}}
@@ -52,18 +52,18 @@ export default function Demo(props: Partial<typeof settings>) {
         [data-slipstream-no]{display:inline-block;margin-right:.7rem;color:rgba(251,251,250,.85);font:500 .75rem ui-monospace,monospace;letter-spacing:.08em;transform:translateY(-.1em);}
         @container(min-width:768px){[data-slipstream-features]{grid-template-columns:repeat(3,minmax(0,1fr));gap:3.5rem;}}
       `}</style>
-      {face ? <GlyphPortal word={s.word} fontFamily={face} fontWeight={700} style={{ fontFamily: face }} scrollLength={s.scrollLength} interactive={s.interactive} annotations={s.annotations} enterLabel="Meet Eddie’s Roofing" front={<>
-          <div data-sublime-header><span data-sublime-logo>Eddie’s Roofing</span><span data-sublime-category>Roofing projects for your property</span></div>
-          <p data-sublime-eyebrow>Roofing services for your property.</p>
-          <p data-sublime-support>Explore our roofing services.</p>
+      {face ? <GlyphPortal word={s.word} fontFamily={face} fontWeight={700} style={{ fontFamily: face }} scrollLength={s.scrollLength} interactive={s.interactive} annotations={s.annotations} enterLabel="Meet JNF Plumbing Cairns" front={<>
+          <div data-sublime-header><span data-sublime-logo>JNF Plumbing Cairns</span><span data-sublime-category>Plumbing projects for your property</span></div>
+          <p data-sublime-eyebrow>Plumbing services for your property.</p>
+          <p data-sublime-support>Explore our plumbing services.</p>
           <span data-sublime-scroll>Scroll to explore ↓</span>
         </>}>
         <div data-slipstream-copy>
-          <h2>Care at every stage of your roofing project.</h2>
+          <h2>Care at every stage of your plumbing project.</h2>
           <div data-slipstream-features>
             <div data-slipstream-feature><h3><span data-slipstream-no>01</span>Choose where to start</h3><p>Choose a letter and scroll to explore each step.</p></div>
-            <div data-slipstream-feature><h3><span data-slipstream-no>02</span>Explore our roofing services</h3><p>Every roofing project starts with a conversation about what you need.</p></div>
-            <div data-slipstream-feature><h3><span data-slipstream-no>03</span>Let’s talk</h3><p>Tell us about your roof and the work you need.</p></div>
+            <div data-slipstream-feature><h3><span data-slipstream-no>02</span>Explore our plumbing services</h3><p>Every plumbing project starts with a conversation about what you need.</p></div>
+            <div data-slipstream-feature><h3><span data-slipstream-no>03</span>Let’s talk</h3><p>Tell us about your plumbing and the work you need.</p></div>
           </div>
         </div>
       </GlyphPortal> : <div role="status" style={{ height: "100%", display: "grid", placeItems: "center", color: "#555", fontSize: 12 }}>Carregando…</div>}

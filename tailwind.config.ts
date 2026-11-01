@@ -9,11 +9,11 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        paper: { DEFAULT: '#FFFFFF', secondary: '#F3F4F5' },
-        forest: { DEFAULT: '#050505', ink: '#151515', light: '#5F6368', navy: '#050505' },
-        brand: { DEFAULT: '#C8CDD1', black: '#050505', hover: '#E5E7E9', soft: '#F3F4F5', navy: '#050505', text: '#151515', secondaryText: '#5F6368', border: '#D9DDE0' },
-        lime: '#FFFFFF', greenAccent: '#C8CDD1', orangeAccent: '#A6ADB3', gold: '#A6ADB3', mist: '#D9DDE0', softBlue: '#E5E7E9', redAccent: '#C8CDD1', royalBlueAccent: '#050505', silverAccent: '#A6ADB3', metallicGrey: '#737A80', deepSection: '#050505',
-        navy: { DEFAULT: '#050505', dark: '#050505' },
+        paper: { DEFAULT: '#FFFFFF', secondary: '#F3F6FA' },
+        forest: { DEFAULT: '#062B70', ink: '#101828', light: '#64748B', navy: '#001B4D' },
+        brand: { DEFAULT: '#062B70', black: '#062B70', hover: '#164A9C', soft: '#DCE8F7', navy: '#001B4D', text: '#101828', secondaryText: '#64748B', border: '#D9E2EF' },
+        lime: '#FFFFFF', greenAccent: '#062B70', orangeAccent: '#DCE8F7', gold: '#DCE8F7', mist: '#D9E2EF', softBlue: '#DCE8F7', redAccent: '#062B70', royalBlueAccent: '#164A9C', silverAccent: '#64748B', metallicGrey: '#64748B', deepSection: '#062B70',
+        navy: { DEFAULT: '#001B4D', dark: '#001B4D' },
       },
       fontFamily: {
         display: ['var(--font-display)', 'system-ui', '-apple-system', 'sans-serif'],

@@ -18,7 +18,7 @@ export function createMetadata({
 }): Metadata {
   const url = `${BASE_URL}${pathname}`;
   const fullTitle = `${title} | ${CLINIC_INFO.name}`;
-  const defaultImage = `${BASE_URL}/images/eddies-roofing-logo.png`;
+  const defaultImage = `${BASE_URL}/images/jnf-plumbing-logo.png`;
 
   return {
     title: fullTitle,
@@ -65,7 +65,7 @@ export function createMetadata({
 export function generateLocalBusinessSchema() {
   return {
     '@context': 'https://schema.org',
-    '@type': 'HomeAndConstructionBusiness',
+    '@type': 'Plumber',
     '@id': `${BASE_URL}/#business`,
     name: CLINIC_INFO.name,
     legalName: CLINIC_INFO.legalName,
@@ -110,10 +110,10 @@ export function generateServiceSchema(serviceName: string, description: string, 
     '@type': 'Service',
     name: serviceName,
     description: description,
-    serviceType: 'Roof repairs and roofing services',
+    serviceType: 'Plumbing repairs and plumbing services',
     url: `${BASE_URL}${url}`,
     provider: {
-      '@type': 'GeneralContractor',
+      '@type': 'Plumber',
       name: CLINIC_INFO.name,
     },
   };

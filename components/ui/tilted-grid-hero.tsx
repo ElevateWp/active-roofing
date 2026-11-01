@@ -91,7 +91,7 @@ function measure(
 
 export type TiltedGridImage = {
   src: string;
-  /** Only used if you drop the decorative treatment; the band is aria-hidden. */
+  /** Only used if you drop the decorative service; the band is aria-hidden. */
   alt?: string;
 };
 
