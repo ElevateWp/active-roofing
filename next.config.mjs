@@ -4,16 +4,12 @@ const nextConfig = {
   trailingSlash: true,
   async redirects() {
     return [
-      { source: '/roofing-services', destination: '/services/', permanent: true },
-      { source: '/full-re-roofing', destination: '/emergency-plumbing/', permanent: true },
-      { source: '/roof-inspections', destination: '/roof-plumbing-and-leak-inspections/', permanent: true },
-      { source: '/roof-restoration', destination: '/emergency-plumbing/', permanent: true },
-      { source: '/roof-repairs', destination: '/leak-detection-and-repairs/', permanent: true },
-      { source: '/roof-cleaning', destination: '/blocked-drains-and-toilets/', permanent: true },
-      { source: '/roof-painting', destination: '/hot-water-systems/', permanent: true },
-      { source: '/roof-repointing', destination: '/bathroom-and-kitchen-plumbing/', permanent: true },
-      { source: '/roof-tile-repairs', destination: '/leak-detection-and-repairs/', permanent: true },
-      { source: '/roofing-advice/:path*', destination: '/plumbing-advice/:path*', permanent: true },
+      { source: '/leak-detection-and-repairs', destination: '/leak-repairs/', permanent: true },
+      { source: '/blocked-drains-and-toilets', destination: '/blocked-drains/', permanent: true },
+      { source: '/bathroom-and-kitchen-plumbing', destination: '/bathroom-plumbing/', permanent: true },
+      { source: '/stormwater-and-pump-services', destination: '/emergency-plumbing/', permanent: true },
+      { source: '/roof-plumbing-and-leak-inspections', destination: '/leak-repairs/', permanent: true },
+      { source: '/pre-purchase-plumbing-inspections', destination: '/plumbing-renovations/', permanent: true },
     ];
   },
   images: { unoptimized: true, remotePatterns: [{ protocol: 'https', hostname: 'images.unsplash.com' }] },

@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { SERVICES, CLINIC_INFO } from '@/lib/clinic-data';
+import { SERVICES, CLINIC_INFO } from '@/lib/avs-data';
 import Button from '@/components/ui/Button';
 
 interface FormData {
@@ -74,10 +74,10 @@ export default function BookingForm() {
           Enquiry ready
         </span>
       <h3 className="font-display text-33 md:text-41 text-paper mb-4">
-          Call Jake to continue your enquiry
+          Call Andy to continue your enquiry
         </h3>
         <p className="font-body text-17 text-paper/90 leading-relaxed mb-6">
-          Thanks, {formData.fullName}. Your enquiry details are ready. Call Jake to discuss your plumbing job.
+          Thanks, {formData.fullName}. Your enquiry details are ready. Call Andy to discuss your plumbing or gas fitting job.
         </p>
 
         <div className="p-6 bg-paper/10 border border-mist/20 mb-8 space-y-2 font-body text-15">
@@ -99,7 +99,7 @@ export default function BookingForm() {
 
         <div className="flex flex-wrap items-center gap-4">
           <Button href={callHref} variant="lime">
-            Call Jake
+            Call Andy
           </Button>
           <Button
             type="button"
@@ -155,7 +155,7 @@ export default function BookingForm() {
           required
         />
         {errors.fullName && (
-          <span className="font-body text-13 text-[#64748B] transition-all duration-200">
+          <span className="font-body text-13 text-[#667085] transition-all duration-200">
             {errors.fullName}
           </span>
         )}
@@ -175,12 +175,12 @@ export default function BookingForm() {
               setFormData({ ...formData, phone: e.target.value });
               if (errors.phone) setErrors({ ...errors, phone: undefined });
             }}
-            placeholder="+61 417 890 910"
+            placeholder="+61 415 610 544"
             className="w-full px-4 py-3 text-15 focus:border-forest transition-colors"
             required
           />
           {errors.phone && (
-            <span className="font-body text-13 text-[#64748B]">{errors.phone}</span>
+            <span className="font-body text-13 text-[#667085]">{errors.phone}</span>
           )}
         </div>
 
@@ -201,7 +201,7 @@ export default function BookingForm() {
             required
           />
           {errors.email && (
-            <span className="font-body text-13 text-[#64748B]">{errors.email}</span>
+            <span className="font-body text-13 text-[#667085]">{errors.email}</span>
           )}
         </div>
       </div>
@@ -245,7 +245,7 @@ export default function BookingForm() {
             required
           />
           {errors.preferredDate && (
-            <span className="font-body text-13 text-[#64748B]">{errors.preferredDate}</span>
+            <span className="font-body text-13 text-[#667085]">{errors.preferredDate}</span>
           )}
         </div>
 

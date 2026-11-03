@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { CLINIC_INFO } from './clinic-data';
+import { CLINIC_INFO } from './avs-data';
 
 const vercelHost = process.env.VERCEL_URL;
 const deploymentUrl = vercelHost ? (vercelHost.startsWith('http') ? vercelHost : `https://${vercelHost}`) : 'http://localhost:3000';
@@ -18,7 +18,7 @@ export function createMetadata({
 }): Metadata {
   const url = `${BASE_URL}${pathname}`;
   const fullTitle = `${title} | ${CLINIC_INFO.name}`;
-  const defaultImage = `${BASE_URL}/images/jnf-plumbing-logo.png`;
+  const defaultImage = `${BASE_URL}/images/avs-logo-cropped.png`;
 
   return {
     title: fullTitle,

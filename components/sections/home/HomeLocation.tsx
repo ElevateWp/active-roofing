@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { CLINIC_INFO } from '@/lib/clinic-data';
+import { CLINIC_INFO } from '@/lib/avs-data';
 import Button from '@/components/ui/Button';
 import AnimateOnScroll from '@/components/motion/AnimateOnScroll';
 
@@ -30,10 +30,10 @@ export default function HomeLocation() {
                   {CLINIC_INFO.name}
                 </h3>
                 <p className="font-body text-15 text-forest-ink/90 leading-relaxed mb-2">
-                  Plumbing service
+                  Plumbing and gas fitting
                 </p>
                 <p className="font-body text-15 md:text-17 text-forest-ink/90 leading-relaxed mb-4">
-                  Based in Cairns, JNF Plumbing Cairns serves Cairns, Brinsmead and surrounding areas. Call to discuss your plumbing and current availability.
+                  Based in Kewarra Beach, AVS Plumbing and Gas serves Cairns and surrounding areas. Call to discuss your plumbing or gas fitting needs and current availability.
                 </p>
                 {CLINIC_INFO.primaryLocation.landmarks && (
                   <p className="font-body text-13 text-forest-ink/70 leading-relaxed">
@@ -42,7 +42,7 @@ export default function HomeLocation() {
                 )}
                 <div className="flex flex-wrap gap-2 mt-4">
                   {CLINIC_INFO.identityHighlights.map((highlight) => (
-                    <span key={highlight} className="bg-[#F3F6FA] border border-[#D9E2EF] px-3 py-1.5 text-12 text-[#101828]">
+                    <span key={highlight} className="bg-[#F3F6F9] border border-[#DCE3E9] px-3 py-1.5 text-12 text-[#17191C]">
                       {highlight}
                     </span>
                   ))}
@@ -94,7 +94,7 @@ export default function HomeLocation() {
                     className="object-cover"
                 />
                 <div className="absolute bottom-3 left-3 bg-paper/95 backdrop-blur-sm text-forest-ink font-body text-13 px-3 py-1 font-medium border border-mist/50">
-                  JNF Plumbing Cairns
+                  AVS Plumbing and Gas
                 </div>
               </div>
             </AnimateOnScroll>

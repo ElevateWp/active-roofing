@@ -5,23 +5,23 @@
 @layer base {
   :root {
     --paper: #FFFFFF;
-    --paper-secondary: #F3F6FA;
-    --forest: #062B70;
-    --forest-ink: #101828;
-    --black-accent: #001B4D;
-    --secondary-text: #64748B;
-    --primary-brand: #062B70;
-    --brand-hover: #164A9C;
-    --navy-accent: #001B4D;
-    --soft-blue: #DCE8F7;
-    --soft-orange: #F3F6FA;
+    --paper-secondary: #F3F6F9;
+    --forest: #008CCB;
+    --forest-ink: #17191C;
+    --black-accent: #06436D;
+    --secondary-text: #667085;
+    --primary-brand: #008CCB;
+    --brand-hover: #00A8E8;
+    --navy-accent: #06436D;
+    --soft-blue: #DCE3E9;
+    --soft-orange: #F3F6F9;
     --lime: #FFFFFF;
-    --orange: #DCE8F7;
-    --accent-yellow: #DCE8F7;
-    --mist: #D9E2EF;
-    --silver-accent: #DCE8F7;
-    --metallic-grey: #64748B;
-    --deep-section: #062B70;
+    --orange: #00A8E8;
+    --accent-yellow: #00A8E8;
+    --mist: #DCE3E9;
+    --silver-accent: #DCE3E9;
+    --metallic-grey: #667085;
+    --deep-section: #202124;
     --font-display: "Instrument Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   }

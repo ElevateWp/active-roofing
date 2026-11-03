@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import ServiceLandingPage, { getServiceMetadata } from '@/components/sections/services/ServiceLandingPage';
-import { SERVICES } from '@/lib/clinic-data';
+import { SERVICES } from '@/lib/avs-data';
 
 export function generateStaticParams() {
   return SERVICES.map(({ slug }) => ({ slug }));

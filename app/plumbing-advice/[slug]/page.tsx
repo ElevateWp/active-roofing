@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
-import { BLOG_POSTS, CLINIC_INFO, DENTISTS, SERVICES } from '@/lib/clinic-data';
+import { BLOG_POSTS, CLINIC_INFO, DENTISTS, SERVICES } from '@/lib/avs-data';
 import Breadcrumbs from '@/components/layout/Breadcrumbs';
 import Button from '@/components/ui/Button';
 import Accordion from '@/components/ui/Accordion';
@@ -62,7 +62,7 @@ export default function SingleBlogPage({ params }: BlogPostProps) {
     dateModified: post.lastUpdated,
     author: {
       '@type': 'Person',
-      name: author?.name || 'JNF Plumbing Cairns',
+      name: author?.name || 'AVS Plumbing and Gas',
     },
     publisher: {
       '@type': 'Organization',

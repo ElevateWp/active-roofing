@@ -1,6 +1,6 @@
 import React from 'react';
 import { Metadata } from 'next';
-import { CLINIC_INFO } from '@/lib/clinic-data';
+import { CLINIC_INFO } from '@/lib/avs-data';
 import Breadcrumbs from '@/components/layout/Breadcrumbs';
 import BookingForm from '@/components/sections/booking/BookingForm';
 import WordRevealH1 from '@/components/motion/WordRevealH1';
@@ -11,7 +11,7 @@ import { createMetadata } from '@/lib/seo';
 export const metadata: Metadata = createMetadata({
   title: 'Request a quote',
   description:
-    'Contact JNF Plumbing Cairns to discuss your project and request a quote. Call +61 417 890 910.',
+    'Contact AVS Plumbing and Gas to discuss your plumbing or gas fitting project and request a quote. Call +61 415 610 544.',
   pathname: '/quote/',
 });
 

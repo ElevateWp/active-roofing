@@ -1,7 +1,7 @@
 import React from 'react';
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { BLOG_POSTS, DENTISTS } from '@/lib/clinic-data';
+import { BLOG_POSTS, DENTISTS } from '@/lib/avs-data';
 import Breadcrumbs from '@/components/layout/Breadcrumbs';
 import WordRevealH1 from '@/components/motion/WordRevealH1';
 import TextureBackground from '@/components/layout/TextureBackground';
@@ -11,7 +11,7 @@ import { createMetadata } from '@/lib/seo';
 export const metadata: Metadata = createMetadata({
   title: 'Plumbing advice',
   description:
-    'Plumbing advice information from JNF Plumbing Cairns.',
+    'Practical plumbing advice from AVS Plumbing and Gas.',
   pathname: '/plumbing-advice/',
 });
 

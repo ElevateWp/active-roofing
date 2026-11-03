@@ -13,13 +13,13 @@ import HomeFaqs from '@/components/sections/home/HomeFaqs';
 import HomeLocation from '@/components/sections/home/HomeLocation';
 import HomeFinalCTA from '@/components/sections/home/HomeFinalCTA';
 import TextureBackground from '@/components/layout/TextureBackground';
-import { SERVICES } from '@/lib/clinic-data';
+import { SERVICES } from '@/lib/avs-data';
 import { createMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = createMetadata({
-  title: 'JNF Plumbing Cairns',
+  title: 'AVS Plumbing and Gas',
   description:
-    'Emergency plumbing, leak repairs, hot water systems, blocked drains and plumbing inspections in Cairns. Call +61 417 890 910.',
+    'Gas fitting, gas stove installation, hot water repairs, leak repairs and plumbing services in Cairns. Call +61 415 610 544.',
   pathname: '/',
 });
 
@@ -55,7 +55,7 @@ export default function HomePage() {
         <TextureBackground variant="divider" className="opacity-30" />
       </div>
 
-      {/* SECTION 4: Why choose JNF Plumbing Cairns */}
+      {/* SECTION 4: Why choose AVS Plumbing and Gas */}
       <HomeWhyUs />
 
       {/* SECTION 5: About the business */}

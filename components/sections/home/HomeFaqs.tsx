@@ -3,7 +3,7 @@ import Accordion, { AccordionItem } from '@/components/ui/Accordion';
 import JsonLd from '@/components/ui/JsonLd';
 import { generateFaqSchema } from '@/lib/seo';
 import AnimateOnScroll from '@/components/motion/AnimateOnScroll';
-import { CLINIC_INFO } from '@/lib/clinic-data';
+import { CLINIC_INFO } from '@/lib/avs-data';
 
 const HOME_FAQS: AccordionItem[] = [
   {
@@ -12,13 +12,13 @@ const HOME_FAQS: AccordionItem[] = [
     relatedLink: { href: '/services/', label: 'Explore our services →' },
   },
   {
-    question: 'What areas does JNF Plumbing Cairns service?',
+    question: 'What areas does AVS Plumbing and Gas service?',
     answer: 'The team serves Cairns and surrounding areas from Cairns. Call to discuss your property and availability.',
     relatedLink: { href: '/contact/', label: 'Contact our team →' },
   },
   {
     question: 'How do I arrange a plumbing repair?',
-    answer: 'Call +61 417 890 910 to discuss leaks, hot water, drainage or other plumbing work.',
+    answer: 'Call +61 415 610 544 to discuss gas fitting, hot water, leaks, drainage or other plumbing work.',
     relatedLink: { href: '/emergency-plumbing/', label: 'Explore our services →' },
   },
   {

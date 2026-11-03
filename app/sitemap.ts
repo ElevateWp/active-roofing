@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next';
-import { SERVICES, DENTISTS, BLOG_POSTS } from '@/lib/clinic-data';
+import { SERVICES, DENTISTS, BLOG_POSTS } from '@/lib/avs-data';
 import { BASE_URL } from '@/lib/seo';
 
 export default function sitemap(): MetadataRoute.Sitemap {

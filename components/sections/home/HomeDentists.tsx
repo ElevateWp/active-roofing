@@ -30,15 +30,15 @@ export default function HomePlumbers() {
               Plumbing service
             </span>
             <h2 className="mt-3 max-w-3xl font-display text-26 text-balance text-forest-ink md:text-41">
-              JNF Plumbing Cairns
+              AVS Plumbing and Gas
             </h2>
             <div className="mt-auto flex flex-col items-center pb-1">
               <p className="max-w-lg text-balance font-body text-15 leading-relaxed text-forest-ink/70">
-                Jake and the JNF Plumbing team are known by customers for reliable service, tidy workmanship and clear communication.
+                Andy and the AVS team are praised by customers for prompt service, clear explanations, tidy workmanship and dependable plumbing and gas fitting.
               </p>
               <Link
                 href="/team/"
-                className="pointer-events-auto mt-6 inline-flex rounded-full bg-[#062B70] px-7 py-3 font-body text-15 font-semibold text-[#101828] shadow-lg shadow-[#101828]/20 transition-transform hover:-translate-y-0.5"
+                className="pointer-events-auto mt-6 inline-flex rounded-full bg-[#008CCB] px-7 py-3 font-body text-15 font-semibold text-[#17191C] shadow-lg shadow-[#17191C]/20 transition-transform hover:-translate-y-0.5"
               >
                 Discuss your plumbing <span className="ml-2" aria-hidden="true">→</span>
               </Link>

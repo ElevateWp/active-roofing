@@ -1,5 +1,5 @@
 import React from 'react';
-import { CLINIC_INFO } from '@/lib/clinic-data';
+import { CLINIC_INFO } from '@/lib/avs-data';
 import CountingNumber from '@/components/motion/CountingNumber';
 import AnimateOnScroll from '@/components/motion/AnimateOnScroll';
 

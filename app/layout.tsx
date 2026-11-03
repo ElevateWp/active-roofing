@@ -11,26 +11,24 @@ import { BASE_URL, generateLocalBusinessSchema } from '@/lib/seo';
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: 'JNF Plumbing Cairns | Cairns plumber',
+    default: 'AVS Plumbing and Gas | Cairns plumber and gas fitter',
     template: '%s',
   },
   description:
-    'JNF Plumbing Cairns provides emergency plumbing, leak repairs, hot water systems and drainage services across Cairns. Call +61 417 890 910.',
+    'AVS Plumbing and Gas provides plumbing, gas fitting, hot water repairs, leak repairs and drainage across Cairns. Call +61 415 610 544.',
   keywords: [
-    'JNF Plumbing Cairns',
+    'AVS Plumbing and Gas',
     'plumbing repairs Cairns',
     'blocked drain clearing Cairns and surrounding areas',
     'hot water system repairs Cairns',
     'leak repairs Cairns',
   ],
-  authors: [{ name: 'JNF Plumbing Cairns' }],
+  authors: [{ name: 'AVS Plumbing and Gas Pty Ltd' }],
   icons: {
     icon: [
-      { url: '/favicon.png', type: 'image/png' },
-      { url: '/favicon-32.png', sizes: '32x32', type: 'image/png' },
-      { url: '/favicon-192.png', sizes: '192x192', type: 'image/png' },
+      { url: '/images/avs-logo-cropped.png', type: 'image/png' },
     ],
-    shortcut: [{ url: '/favicon-32.png', type: 'image/png' }],
+    shortcut: [{ url: '/favicon.ico', type: 'image/x-icon' }],
     apple: [{ url: '/favicon-180.png', sizes: '180x180', type: 'image/png' }],
   },
 };
@@ -50,7 +48,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="bg-paper text-forest-ink min-h-screen flex flex-col selection:bg-[#F3F6FA] selection:text-[#101828]">
+      <body className="bg-paper text-forest-ink min-h-screen flex flex-col selection:bg-[#F3F6F9] selection:text-[#17191C]">
         <PagePreloader />
         <SiteTextReveal />
         <JsonLd data={generateLocalBusinessSchema()} />

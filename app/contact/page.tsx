@@ -1,6 +1,6 @@
 import React from 'react';
 import { Metadata } from 'next';
-import { CLINIC_INFO } from '@/lib/clinic-data';
+import { CLINIC_INFO } from '@/lib/avs-data';
 import Breadcrumbs from '@/components/layout/Breadcrumbs';
 import Button from '@/components/ui/Button';
 import WordRevealH1 from '@/components/motion/WordRevealH1';
@@ -9,9 +9,9 @@ import AnimateOnScroll from '@/components/motion/AnimateOnScroll';
 import { createMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Contact JNF Plumbing Cairns',
+  title: 'Contact AVS Plumbing and Gas',
   description:
-    'Call JNF Plumbing Cairns on +61 417 890 910 to discuss your plumbing.',
+    'Call AVS Plumbing and Gas on +61 415 610 544 to discuss plumbing and gas fitting.',
   pathname: '/contact/',
 });
 
@@ -31,9 +31,9 @@ export default function ContactPage() {
                 <span className="font-body text-13 text-forest-ink/60 block mb-3 uppercase tracking-wider font-medium">
                   Contact and quotes
                 </span>
-                <WordRevealH1 text="Contact JNF Plumbing Cairns." />
+                <WordRevealH1 text="Contact AVS Plumbing and Gas." />
                 <p className="font-body text-17 md:text-21 text-forest-ink/90 leading-relaxed mt-6 max-w-2xl">
-                  Call JNF Plumbing Cairns to discuss leaks, hot water, blocked drains, inspections and availability.
+                  Call AVS Plumbing and Gas to discuss gas fitting, hot water, blocked drains, plumbing repairs and availability.
                 </p>
               </AnimateOnScroll>
             </div>
