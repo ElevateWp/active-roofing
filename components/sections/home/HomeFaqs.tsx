@@ -8,28 +8,28 @@ import { CLINIC_INFO } from '@/lib/avs-data';
 const HOME_FAQS: AccordionItem[] = [
   {
     question: 'What services are available?',
-    answer: 'Ask about plumbing repairs and other plumbing services. Call to discuss your plumbing and the work required.',
-    relatedLink: { href: '/services/', label: 'Explore our services →' },
+    answer: 'Ask about roofing repairs and other roofing services. Call to discuss your roofing and the work required.',
+    relatedLink: { href: '/roofing-services/', label: 'Explore our services →' },
   },
   {
-    question: 'What areas does AVS Plumbing and Gas service?',
-    answer: 'The team serves Cairns and surrounding areas from Cairns. Call to discuss your property and availability.',
-    relatedLink: { href: '/contact/', label: 'Contact our team →' },
+    question: 'What areas does Active Roofing Inc. service?',
+    answer: 'The team serves Los Angeles and surrounding areas from Los Angeles. Call to discuss your property and availability.',
+    relatedLink: { href: '/contact-roofing/', label: 'Contact our team →' },
   },
   {
-    question: 'How do I arrange a plumbing repair?',
-    answer: 'Call +61 415 610 544 to discuss gas fitting, hot water, leaks, drainage or other plumbing work.',
-    relatedLink: { href: '/emergency-plumbing/', label: 'Explore our services →' },
+    question: 'How do I arrange a roofing repair?',
+    answer: 'Call +1 310-408-4940 to discuss roof repairs, leaks, replacement or installation.',
+    relatedLink: { href: '/emergency-roofing/', label: 'Explore our services →' },
   },
   {
     question: 'How do I request a quote?',
     answer: `Call ${CLINIC_INFO.contact.phone} or send an enquiry using the quote form.`,
-    relatedLink: { href: '/quote/', label: 'Request a quote →' },
+    relatedLink: { href: '/roofing-quote/', label: 'Request a quote →' },
   },
   {
     question: 'How can I check availability?',
     answer: `Call ${CLINIC_INFO.contact.phone} to discuss your property and check availability.`,
-    relatedLink: { href: '/contact/', label: 'Contact our team →' },
+    relatedLink: { href: '/contact-roofing/', label: 'Contact our team →' },
   },
 ];
 

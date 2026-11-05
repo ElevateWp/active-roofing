@@ -148,9 +148,9 @@ export default function PagePreloader() {
   return (
     <div
       ref={containerRef}
-      className="fixed inset-0 z-[99999] flex items-center justify-center bg-[#202124] text-white overflow-hidden select-none"
+      className="fixed inset-0 z-[99999] flex items-center justify-center bg-[#20262B] text-white overflow-hidden select-none"
       style={{ willChange: 'clip-path, opacity' }}
-      aria-label="Loading AVS Plumbing and Gas"
+      aria-label="Loading Active Roofing Inc."
     >
       {/* One charcoal cover retracts along a stepped diagonal, keeping the reveal continuous. */}
 
@@ -161,11 +161,11 @@ export default function PagePreloader() {
         {/* Animated 3D Logo */}
         <div
           ref={logoRef}
-          className="relative w-40 h-20 sm:w-48 sm:h-24 bg-[#202124] rounded-2xl shadow-2xl p-2.5 flex items-center justify-center mb-6 border border-[#202124]/40"
+          className="relative w-40 h-20 sm:w-48 sm:h-24 bg-[#20262B] rounded-2xl shadow-2xl p-2.5 flex items-center justify-center mb-6 border border-[#20262B]/40"
         >
           <Image
-            src="/images/avs-logo-cropped.png"
-            alt="AVS Plumbing and Gas"
+            src="/images/active-roofing-logo.png"
+            alt="Active Roofing Inc."
             width={220}
             height={118}
             priority
@@ -178,7 +178,7 @@ export default function PagePreloader() {
           ref={titleRef}
           className="font-display text-22 sm:text-30 md:text-36 font-medium text-white uppercase tracking-[0.08em] leading-tight mb-3 text-shadow-sm"
         >
-          AVS Plumbing and Gas
+          Active Roofing Inc.
         </h1>
 
         {/* Delicate Golden-Lime Divider Line */}
@@ -192,7 +192,7 @@ export default function PagePreloader() {
           ref={subtitleRef}
           className="font-body text-12 sm:text-13 text-white/85 uppercase tracking-[0.15em]"
         >
-           professional plumbing services 
+           professional roofing services 
         </p>
       </div>
     </div>

@@ -1,100 +1,80 @@
 import type { BlogPost, ClinicInformation, ServiceDetail, TeamProfile } from './clinic-data';
-
 export type DentistProfile = TeamProfile;
-
-const phone = '+61 415 610 544';
-const businessId = 'avs-plumbing-and-gas';
-const plumbingPhoto = '/images/plumbing-technician.jpg';
-
+const phone = '+1 310-408-4940';
+const businessId = 'active-roofing-inc';
+const photo = '/images/roofing-projects/active-roofing-project-03.jpg';
 export const CLINIC_INFO: ClinicInformation = {
-  name: 'AVS Plumbing and Gas',
-  legalName: 'AVS Plumbing and Gas Pty Ltd',
-  tagline: 'Plumbing and gas fitting across Cairns and surrounding areas.',
-  primaryLocation: {
-    street: '29 Poolwood Rd', suite: '', city: 'Kewarra Beach', state: 'QLD', postalCode: '4879', country: 'AU',
-    directions: '29 Poolwood Rd, Kewarra Beach QLD 4879, Australia',
-    landmarks: 'Serving Cairns, Kewarra Beach and surrounding areas.',
-  },
+  name: 'Active Roofing Inc.', legalName: 'Active Roofing Inc.',
+  tagline: 'Roof repairs and roofing services across Wilmington and Los Angeles.',
+  primaryLocation: { street: '1614 N Marine Ave', suite: '', city: 'Wilmington', state: 'CA', postalCode: '90744', country: 'US', directions: '1614 N Marine Ave, Wilmington, CA 90744, United States', landmarks: 'Serving Wilmington, Los Angeles and nearby communities.' },
   contact: { phone, emergencyPhone: phone, whatsapp: phone },
-  identityHighlights: ['Plumbing and gas fitting', 'Hot water system repairs and replacement', 'Emergency leaks and plumbing repairs'],
-  schedule: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'].map((day) => ({ day, hours: 'Open 24 hours' })),
-  verifiedStats: [{ value: 50, suffix: '', label: 'Google reviews', description: 'Customer reviews for AVS Plumbing and Gas.' }],
+  identityHighlights: ['Roof repairs and leak diagnosis', 'Roof replacement and installation', 'Responsive service and careful clean-up'],
+  schedule: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'].map(day => ({ day, hours: '7 AM–9 PM' })),
+  verifiedStats: [{ value: 8, suffix: '', label: 'Google reviews', description: 'Google reviews for Active Roofing Inc.' }],
   accreditations: [],
 };
-
 export const DENTISTS: TeamProfile[] = [{
-  id: businessId, slug: businessId, name: 'Andy', title: 'Plumber and gas fitter',
-  qualifications: 'Plumbing and gas services', specialization: 'Residential plumbing repairs, hot water and gas fitting', experienceYears: 0,
-  bio: 'Andy and the AVS Plumbing and Gas team help Cairns households with gas stoves, hot water systems, leaking taps and pipes, burst pipes, bathroom and kitchen plumbing, and home renovations. Customers describe prompt, professional service, clear explanations and tidy workmanship.',
-  philosophy: 'Explain the issue and options clearly, agree on the work, and treat each home with care.',
+  id: businessId, slug: businessId, name: 'Ivan', title: 'Roofing contractor',
+  qualifications: 'Roofing contractor', specialization: 'Roof repairs, installation and replacement', experienceYears: 0,
+  bio: 'Ivan and the Active Roofing team help homeowners with roof repairs and installations. Customers describe professional, punctual service, careful follow-up, straightforward advice, tidy work and dependable results.',
+  philosophy: 'Explain the work clearly, arrive when arranged, and leave the property tidy.',
   education: [], memberships: [],
-  specialties: ['Gas stove installation', 'Gas hot water systems', 'Hot water system repairs and replacement', 'Burst and leaking pipes', 'Leak detection and repairs', 'Tap and mixer repairs', 'Bathroom and kitchen plumbing', 'Whole-home repiping and renovations'],
-  image: plumbingPhoto, warmImage: '/images/plumbing-repair.jpg',
+  specialties: ['Roof leak repairs', 'Roof replacement', 'Roof installation', 'Roof inspections', 'Storm damage repairs', 'Roof maintenance'],
+  image: photo, warmImage: '/images/roofing-projects/active-roofing-project-14.jpg',
 }];
-
 const serviceEntries = [
-  { slug: 'emergency-plumbing', name: 'Emergency plumbing', description: 'Prompt help with urgent plumbing problems across Cairns, including burst pipes, worsening leaks and hot water failures. Call AVS to explain what has happened and discuss availability.', focus: ['A pipe has burst or water is actively leaking', 'A plumbing fault needs urgent attention', 'You need help restoring water or hot water'] },
-  { slug: 'gas-fitting', name: 'Gas fitting and gas stoves', description: 'Talk to AVS Plumbing and Gas about gas fitting and gas stove installation. Explain your appliance and property requirements to arrange a suitable visit.', focus: ['You need a new gas stove installed', 'You have a gas appliance or connection question', 'You want to discuss a gas fitting job'] },
-  { slug: 'hot-water-systems', name: 'Hot water systems', description: 'AVS can help with a failed hot water system, gas hot water issues, repairs and replacement. Call to describe the fault and discuss a prompt visit.', focus: ['Your hot water system has stopped working', 'Your gas hot water service has a fault', 'You need a hot water system repaired or replaced'] },
-  { slug: 'leak-repairs', name: 'Leak detection and repairs', description: 'Arrange help with leaking taps, shower mixers, pipework and water lines. AVS can inspect the issue, explain practical options and discuss the repair.', focus: ['A tap, mixer or pipe is leaking', 'A leak is getting worse or has stopped normal water use', 'You need help finding and repairing a plumbing leak'] },
-  { slug: 'blocked-drains', name: 'Blocked drains and toilets', description: 'Get help investigating blocked toilets and drainage problems. AVS can assess what is affected, explain the next steps and complete the agreed work.', focus: ['A toilet or drain is blocked', 'Water is draining slowly or backing up', 'You need help restoring normal drainage'] },
-  { slug: 'bathroom-plumbing', name: 'Bathroom plumbing', description: 'Discuss bathroom plumbing repairs and installations, including leaking shower mixers, taps, toilets and vanity connections.', focus: ['A shower mixer, tap or toilet needs repair', 'You are updating bathroom plumbing', 'A bathroom leak needs investigation'] },
-  { slug: 'kitchen-plumbing', name: 'Kitchen plumbing', description: 'From gas stove installation to leaking taps and sink plumbing, AVS can discuss your kitchen plumbing job and the work required.', focus: ['You need a gas stove installed', 'A kitchen tap, sink or pipe is leaking', 'You are planning a kitchen plumbing update'] },
-  { slug: 'plumbing-renovations', name: 'Plumbing renovations and repiping', description: 'AVS Plumbing and Gas can discuss plumbing work for renovations, including whole-home repiping and kitchen or laundry plumbing.', focus: ['You are renovating a home', 'You need plumbing replaced or rerouted', 'A burst pipe has affected pipework under the home'] },
+  { slug: 'roof-repair', name: 'Roof repair', description: 'Get help with damaged roofing, loose or missing materials and other roof problems. Active Roofing can assess the issue, explain the repair and discuss timing.', focus: ['Roofing materials are damaged or missing', 'You have noticed a roofing problem', 'You need a repair plan for your property'] },
+  { slug: 'roof-leak-repair', name: 'Roof leak repair', description: 'Arrange an assessment when water is getting in through the roof. Describe where and when the leak appears so the team can investigate and discuss a repair.', focus: ['Water is coming in through the roof', 'You have noticed a ceiling stain after rain', 'A previous leak needs follow-up'] },
+  { slug: 'roof-replacement', name: 'Roof replacement', description: 'Discuss a roof replacement for your home, ADU or garage. Active Roofing can review the project, outline the work and provide next steps for a quote.', focus: ['Your roof needs extensive repairs', 'You are planning a new roof for an addition or garage', 'You want to discuss roof replacement options'] },
+  { slug: 'roof-installation', name: 'Roof installation', description: 'Talk to Active Roofing about roofing installation for a new build or property addition, including an ADU or garage project.', focus: ['You need roofing for a new structure', 'You are adding an ADU or garage', 'You want to discuss a roofing installation'] },
+  { slug: 'roof-inspections', name: 'Roof inspections', description: 'Arrange a roof assessment to understand its condition and identify repair needs. The team can explain what they find and discuss suitable next steps.', focus: ['You want to check your roof condition', 'You have noticed signs of wear or damage', 'You need to understand a roof repair concern'] },
+  { slug: 'storm-damage-roof-repair', name: 'Storm damage roof repair', description: 'If wind or rain has damaged your roof, contact Active Roofing to explain what happened and discuss an inspection and repair.', focus: ['A storm has damaged roofing materials', 'You noticed a roof leak after heavy rain', 'You need to discuss storm-related roof repairs'] },
+  { slug: 'roof-maintenance', name: 'Roof maintenance', description: 'Discuss roofing maintenance and repairs that can help address wear before it develops into a larger problem.', focus: ['You want to address visible roof wear', 'You need advice about roof upkeep', 'You want to arrange roofing maintenance'] },
 ];
-
 function makeService(entry: typeof serviceEntries[number]): ServiceDetail {
-  const overview = 'AVS Plumbing and Gas provides residential plumbing and gas fitting across Cairns and surrounding areas. Call to describe the issue, discuss options and check availability.';
+  const overview = 'Active Roofing Inc. provides roof repairs and roofing services in Wilmington and Los Angeles. Call to describe the project, discuss options and request a quote.';
   const steps = [
-    ['Tell us what is happening', 'First contact', 'Describe the plumbing or gas issue and let us know if it is urgent.', 'Share the property location, what you have noticed and any access details.'],
-    ['Assess the issue', 'By arrangement', 'A plumber reviews the problem and explains practical options.', 'The work needed depends on the issue and the plumbing or gas system at your property.'],
-    ['Agree on the work', 'Before work begins', 'Review the proposed work, price and timing before going ahead.', 'Ask any questions you have about the scope and next steps.'],
-    ['Complete the repair', 'As arranged', 'The agreed plumbing or gas work is completed at your property.', 'The team will explain any relevant next steps after the job.'],
+    ['Tell us about the roof', 'First contact', 'Describe the roof issue or project and where the property is located.', 'Share what you have noticed, when it began and any access details.'],
+    ['Assess the work', 'By arrangement', 'The roofing team reviews the issue and explains the work that may be needed.', 'The recommended scope depends on the roof condition and the property.'],
+    ['Review the quote', 'Before work begins', 'Discuss the proposed work, price and schedule before proceeding.', 'Ask any questions about the scope and next steps.'],
+    ['Complete the roofing work', 'As arranged', 'The agreed roofing work is completed at your property.', 'The team can explain relevant follow-up and care after the job.'],
   ];
   return {
     ...entry, shortDescription: entry.description, navLabel: entry.name,
-    tagline: `${entry.name} in Cairns and surrounding areas.`, clinicalExplanation: overview,
-    whoNeeds: entry.focus, benefits: ['Prompt responses and clear communication', 'Practical advice about repair options', 'The work and next steps explained clearly'],
-    indications: entry.focus.map((condition) => ({ condition, explanation: 'Call AVS Plumbing and Gas to describe the issue and discuss the next step.' })),
+    tagline: entry.name + ' in Wilmington and Los Angeles.', clinicalExplanation: overview,
+    whoNeeds: entry.focus, benefits: ['Clear communication and follow-up', 'Straightforward advice about the work', 'Professional, tidy workmanship'],
+    indications: entry.focus.map(condition => ({ condition, explanation: 'Call Active Roofing Inc. to describe the roof and discuss the next step.' })),
     procedureSteps: steps.map(([title, duration, description, clinicalDetails], index) => ({ stepNumber: index + 1, title, duration, description, clinicalDetails })),
     recoveryTimeline: [
-      { period: 'Before the visit', expectedSensations: 'Describe the issue and arrange a suitable time.', careProtocol: 'If safe, turn off the water supply if a pipe is actively leaking.' },
-      { period: 'During the work', expectedSensations: 'The plumber assesses and completes the agreed job.', careProtocol: 'Follow any practical advice given for your plumbing or gas system.' },
-      { period: 'After the work', expectedSensations: 'Review the completed repair and any next steps.', careProtocol: 'Contact AVS if you have questions about the job.' },
+      { period: 'Before the visit', expectedSensations: 'Share the roof concern and arrange a suitable time.', careProtocol: 'If water is entering the property, protect belongings where safe and describe the leak when you call.' },
+      { period: 'During the work', expectedSensations: 'The team assesses the roof and completes the agreed work.', careProtocol: 'Discuss access, work scope and any property-specific arrangements with the team.' },
+      { period: 'After the work', expectedSensations: 'Review the completed roofing work and any follow-up notes.', careProtocol: 'Contact Active Roofing if you have questions about the completed job.' },
     ],
-    costTransparency: { baseRange: 'Call to discuss your job and request a quote.', factors: ['Type and location of the issue', 'Parts and access required', 'The agreed work scope'], whatIsIncluded: ['Discussion of the issue and options', 'Agreed scope of work', 'Quote and timing information'], note: 'Pricing depends on the issue and agreed scope. Contact AVS for a quote.' },
-    beforeAfterCase: { category: entry.name, clinicalContext: 'Illustrative plumbing service imagery. Contact AVS to discuss your job.', beforeLabel: 'Before the repair', afterLabel: 'After the repair', beforeImage: plumbingPhoto, afterImage: '/images/plumbing-repair.jpg', timeframe: 'Timing depends on the issue and agreed work.' },
+    costTransparency: { baseRange: 'Call to discuss the project and request a quote.', factors: ['Roof condition and type of work', 'Property access and materials required', 'The agreed work scope'], whatIsIncluded: ['Discussion of the project and options', 'Agreed scope of work', 'Quote and timing information'], note: 'Pricing depends on the roof and agreed scope. Contact Active Roofing for a quote.' },
+    beforeAfterCase: { category: entry.name, clinicalContext: 'Project photos shared by Active Roofing Inc. Contact the team to discuss your roof.', beforeLabel: 'Roof project photo', afterLabel: 'Roof project photo', beforeImage: '/images/roofing-projects/active-roofing-project-11.jpg', afterImage: '/images/roofing-projects/active-roofing-project-17.jpg', timeframe: 'Timing depends on the roof and agreed work.' },
     assignedDentistId: businessId,
     faqs: [
-      { question: `How do I arrange ${entry.name.toLowerCase()}?`, answer: `Call ${phone} to describe the issue and discuss availability.` },
-      { question: 'What areas do you service?', answer: 'AVS serves Cairns, Kewarra Beach and surrounding areas. Call to confirm availability for your property.' },
-      { question: 'How do I request a quote?', answer: `Call ${phone} to describe the work and request a quote.` },
-      { question: 'Are you open after hours?', answer: 'AVS is listed as open 24 hours. Call to discuss your plumbing issue and availability.' },
+      { question: 'How do I arrange ' + entry.name.toLowerCase() + '?', answer: 'Call ' + phone + ' to describe your roof and discuss availability.' },
+      { question: 'What areas do you serve?', answer: 'Active Roofing serves Wilmington, Los Angeles and nearby areas. Call to confirm availability for your property.' },
+      { question: 'How do I request a quote?', answer: 'Call ' + phone + ' to describe the project and request a quote.' },
+      { question: 'What are your hours?', answer: 'Active Roofing Inc. is listed as open daily from 7 AM to 9 PM. Call to discuss your project and availability.' },
     ],
   };
 }
-
 export const SERVICES: ServiceDetail[] = serviceEntries.map(makeService);
 export interface EmergencyCondition { id: string; title: string; urgency: 'Immediate (0–2 hours)' | 'Same-Day (2–6 hours)' | 'Urgent (Within 24 hours)'; symptoms: string[]; immediateAction: string[]; clinicTreatment: string; }
 export const EMERGENCY_CONDITIONS: EmergencyCondition[] = [];
-
 export const BLOG_POSTS: BlogPost[] = [
-  { slug: 'what-to-do-for-a-burst-pipe', title: 'What to do when a pipe bursts', category: 'Emergency plumbing', readTime: '3 min read', publishDate: '2026-10-28', lastUpdated: '2026-10-28', authorId: businessId, excerpt: 'Practical first steps when a water pipe bursts at home.', leadImage: plumbingPhoto, relatedServiceSlug: 'emergency-plumbing', content: { intro: 'A burst pipe can quickly send water through your home. If you can do so safely, shut off the water supply and call a plumber.', sections: [{ heading: 'Turn off the water if safe', body: 'Use the main water shut-off valve if you know where it is and can reach it safely. Keep clear of electrical hazards and standing water.' }, { heading: 'Describe the problem', body: 'Tell the plumber where the water is coming from, when you noticed it and whether the water supply has been turned off.' }] } },
-  { slug: 'hot-water-system-stopped-working', title: 'When your hot water stops working', category: 'Hot water systems', readTime: '3 min read', publishDate: '2026-10-28', lastUpdated: '2026-10-28', authorId: businessId, excerpt: 'What information to share when arranging a hot water system repair.', leadImage: '/images/plumbing-hot-water.jpg', relatedServiceSlug: 'hot-water-systems', content: { intro: 'A hot water system can fail without warning. A few details can help your plumber understand the problem and discuss the next step.', sections: [{ heading: 'Note what has changed', body: 'Mention whether there is no hot water, a visible leak, unusual noise or another change in the system.' }, { heading: 'Ask about repair options', body: 'A plumber can assess the system and explain the repair or replacement options for your property.' }] } },
-  { slug: 'gas-stove-installation', title: 'Planning a gas stove installation', category: 'Gas fitting', readTime: '3 min read', publishDate: '2026-10-28', lastUpdated: '2026-10-28', authorId: businessId, excerpt: 'Details to discuss when arranging a new gas stove installation.', leadImage: '/images/plumbing-technician.jpg', relatedServiceSlug: 'gas-fitting', content: { intro: 'When arranging a gas stove installation, share the appliance details and property location so the gas fitting work can be discussed.', sections: [{ heading: 'Have the appliance details ready', body: 'Tell the plumber the appliance type and any installation information supplied with it.' }, { heading: 'Confirm the work and timing', body: 'Discuss the installation requirements, quote and suitable timing before the work begins.' }] } },
+ { slug: 'what-to-do-about-a-roof-leak', title: 'What to do when you notice a roof leak', category: 'Roof leak repair', readTime: '3 min read', publishDate: '2026-11-03', lastUpdated: '2026-11-03', authorId: businessId, excerpt: 'What to share when arranging an assessment for a roof leak.', leadImage: photo, relatedServiceSlug: 'roof-leak-repair', content: { intro: 'If you notice water coming in, note where it appears and when it happens. Contact a roofing contractor to discuss an assessment and repair.', sections: [{ heading: 'Note what you can see', body: 'Describe any ceiling stain, dripping water or visible roof damage, and whether it follows rain.' }, { heading: 'Protect the area where safe', body: 'Move belongings away from the leak if safe. Avoid climbing onto a wet or damaged roof.' }] } },
+ { slug: 'roof-repair-or-replacement', title: 'Roof repair or replacement: what to discuss', category: 'Roof replacement', readTime: '3 min read', publishDate: '2026-11-03', lastUpdated: '2026-11-03', authorId: businessId, excerpt: 'Information to share when discussing a repair or roof replacement.', leadImage: '/images/roofing-projects/active-roofing-project-02.jpg', relatedServiceSlug: 'roof-replacement', content: { intro: 'The right scope depends on the roof condition and the property. An assessment can help clarify whether a repair or a larger project should be discussed.', sections: [{ heading: 'Describe the roof and concern', body: 'Share the property type, roof issue and any previous repairs.' }, { heading: 'Ask about the scope', body: 'Review the proposed work, materials, quote and schedule before deciding how to proceed.' }] } },
+ { slug: 'roofing-for-an-adu-or-garage', title: 'Planning roofing for an ADU or garage', category: 'Roof installation', readTime: '3 min read', publishDate: '2026-11-03', lastUpdated: '2026-11-03', authorId: businessId, excerpt: 'Project details to prepare when arranging roofing for an ADU or garage.', leadImage: photo, relatedServiceSlug: 'roof-installation', content: { intro: 'When planning roofing for an ADU or garage, share the project location, structure and timing so the work can be discussed.', sections: [{ heading: 'Share project details', body: 'Describe the structure, its current stage and the roofing work you need.' }, { heading: 'Review the quote and schedule', body: 'Discuss the proposed scope, price and timing before work begins.' }] } },
+];
+export const CUSTOMER_REVIEWS: { name: string; date: string; text: string; rating: number }[] = [
+ { name: 'Susie LeMay', date: '4 months ago', rating: 5, text: 'Ivan at Active Roofing was amazing and his work was impeccable. He was professional, on time and had great follow up. I would highly recommend him.' },
+ { name: 'Jessie Carbajal', date: 'a year ago', rating: 5, text: 'I recently hired Active Roofing Inc. for the complete roofing installation on both my ADU and a 1-car garage addition, and I am beyond impressed with their work.' },
+ { name: 'Wan ping Yu', date: '7 months ago', rating: 5, text: 'I have worked with Active Roofing several times and have referred Ivan to neighbors and friends. He is straightforward, punctual, cleans up after the work and consistently does a great job.' },
+ { name: 'Max Mougan', date: '11 months ago', rating: 5, text: 'I have used Active Roofing to work on the roofs of five different properties in the Los Angeles area for several years. I would not think of using anybody else.' },
+ { name: 'Michael Magaw', date: '8 months ago', rating: 5, text: 'Ivan and his father are honest and reliable. He is our go-to roofer.' },
+ { name: 'Yesenia Carbajal', date: '6 years ago', rating: 5, text: 'Trusted roofer, works weekends, quick response, over 10 years of experience. Roof repairs and roof replacement. Highly recommend!' },
 ];
 
-export const CUSTOMER_REVIEWS: { name: string; date: string; text: string; rating: number }[] = [
-  { name: 'Katie Sheridan', date: '3 months ago', rating: 5, text: 'I contacted Andy to install a new gas stove for me rather urgently. He responded quickly, was super kind, helpful and informative, and had the job completed the next day. Efficient and very reasonably priced, I highly recommend AVS Plumbing and Gas and will certainly be using them in future.' },
-  { name: 'Niki Holgate', date: '8 months ago', rating: 5, text: 'We were having issues with our gas hot water service. Andy from AVS Plumbing came over promptly and took time out of his busy day to explain to us how we could possibly fix the problem. He was kind and patient and gave us great advice. Would highly recommend him.' },
-  { name: 'Vincent', date: '2 years ago', rating: 5, text: 'Andy and the team from AVS plumbing have helped out a couple of times and saved the day! Most recently a replacement gas hot water system at short notice... We couldn’t be happier with the care, professionalism and quality of service. Great and friendly team - thanks again!' },
-  { name: 'Holley Molley', date: 'a year ago', rating: 5, text: 'Andy and his team have been absolute legends when re plumbing the entire house as we burst a water pipe under the house slab. Professional neat and tidy work on time. Highly recommend Andy and his friendly, reliable and easy to talk to team. Very competitive pricing from a honest hard working nice guy.' },
-  { name: 'David McDonough', date: '10 months ago', rating: 5, text: 'Fantastic friendly service at a reasonable price. Andi has completed a couple of projects for us now, as we renovate our home, and we could not be happier. He is reliable, solutions focused and easy to work with. Highly recommended!' },
-  { name: 'Kim Rheuben', date: '4 months ago', rating: 5, text: 'Andy and his team did a great job. Came immediately and fixed hot water system in a day. Highly recommend.' },
-  { name: 'Leanne Kearns', date: '2 years ago', rating: 5, text: 'AVS plumbing went above an beyond when we had our hot water system blow up. They have since helped us with our renovations and will be our first call for all plumbing and gas needs. Andy and his team are efficient, reliable and affordable. We will strongly recommend them to our friends and family for their future plumbing needs.' },
-  { name: 'Elizabeth Molloy', date: 'a year ago', rating: 5, text: 'I have used Andy many times over the years. He is always very responsive, reliable and cost effective. Andy is continually professional and communicates in layman’s terms. It’s always an easy and non stressful experience. I have no hesitation to recommend Andy!' },
-  { name: 'Connie Shanks', date: '11 months ago', rating: 5, text: 'AVS plumbing are fast, provide excellent work, friendly and i think, are the best plumbing service in Cairns. I would highly recommend their work and their company.' },
-  { name: 'david L', date: '3 years ago', rating: 5, text: 'I contacted Andy from AVS and the service and quality of work awesome start to finish. We had a burst pipe that he fixed and also and full new plumb of a kitchen and laundry. The quality of work, service and professional was spot on. Will definitely be using AVS for all future plumbing needs. Thanks AVS!!' },
-  { name: 'Jason Briede', date: 'a year ago', rating: 5, text: 'Andy and team are fast, reliable and professional. They have gone above and beyond to fix issues at our house. It’s great to know we have a trusted plumber when we need one. Thanks team for your hard work!' },
-  { name: 'Elizabeth Ward', date: 'a year ago', rating: 5, text: 'I had a great experience with Andy. He was very professional and punctual. Made sure he left the space how he found it. Will definitely be recommending him to anyone I know looking for a plumber.' },
-];

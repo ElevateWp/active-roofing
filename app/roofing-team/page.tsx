@@ -5,12 +5,12 @@ import AnimateOnScroll from '@/components/motion/AnimateOnScroll';
 import WordRevealH1 from '@/components/motion/WordRevealH1';
 import { SERVICES } from '@/lib/avs-data';
 import { createMetadata } from '@/lib/seo';
-import HomePlumbers from '@/components/sections/home/HomeDentists';
+import HomeRoofers from '@/components/sections/home/HomeDentists';
 
 export const metadata: Metadata = createMetadata({
   title: 'Our team',
-  description: 'AVS Plumbing and Gas provides emergency plumbing, gas fitting, hot water systems and drainage services. Call +61 415 610 544.',
-  pathname: '/team/',
+  description: 'Active Roofing Inc. provides emergency roofing, roofing, roofing services and drainage services. Call +1 310-408-4940.',
+  pathname: '/roofing-team/',
 });
 
 export default function TeamPage() {
@@ -18,16 +18,16 @@ export default function TeamPage() {
     <div className="flex w-full flex-col bg-paper">
       <section className="border-b border-mist py-16 md:py-24">
         <div className="mx-auto max-w-site px-6 md:px-12">
-          <Breadcrumbs items={[{ name: 'Our team', path: '/team/' }]} />
+          <Breadcrumbs items={[{ name: 'Our team', path: '/roofing-team/' }]} />
           <div className="mt-8 max-w-3xl">
-            <span className="mb-3 block font-body text-13 font-medium uppercase tracking-wider text-brand">AVS Plumbing and Gas</span>
-            <WordRevealH1 text="Meet Andy and the AVS team." />
-            <p className="mt-6 font-body text-17 leading-relaxed text-forest-ink/85 md:text-21">Based in Kewarra Beach, AVS Plumbing and Gas serves Cairns and surrounding areas. Contact Andy about gas fitting, hot water, burst pipes, leaks or drainage.</p>
+            <span className="mb-3 block font-body text-13 font-medium uppercase tracking-wider text-brand">Active Roofing Inc.</span>
+            <WordRevealH1 text="Meet Ivan and the Active Roofing team." />
+            <p className="mt-6 font-body text-17 leading-relaxed text-forest-ink/85 md:text-21">Based in Wilmington, Active Roofing Inc. serves Los Angeles and surrounding areas. Contact Ivan about roof repairs, leak repairs, replacement or installation.</p>
           </div>
         </div>
       </section>
 
-      <HomePlumbers />
+      <HomeRoofers />
 
       <section className="border-b border-mist py-16 md:py-24">
         <div className="mx-auto max-w-site px-6 md:px-12">
@@ -47,8 +47,8 @@ export default function TeamPage() {
 
       <section className="bg-forest py-14 text-paper md:py-20">
         <div className="mx-auto flex max-w-site flex-col items-start justify-between gap-6 px-6 md:flex-row md:items-center md:px-12">
-          <div><span className="mb-2 block font-body text-13 font-semibold uppercase tracking-wider text-paper/65">AVS Plumbing and Gas</span><h2 className="font-display text-26 md:text-33">Tell us about your project.</h2></div>
-          <Link href="/quote/" className="inline-flex min-h-12 items-center justify-center bg-paper px-6 font-body text-15 font-semibold text-forest">Request a quote</Link>
+          <div><span className="mb-2 block font-body text-13 font-semibold uppercase tracking-wider text-paper/65">Active Roofing Inc.</span><h2 className="font-display text-26 md:text-33">Tell us about your project.</h2></div>
+          <Link href="/roofing-quote/" className="inline-flex min-h-12 items-center justify-center bg-paper px-6 font-body text-15 font-semibold text-forest">Request a quote</Link>
         </div>
       </section>
     </div>

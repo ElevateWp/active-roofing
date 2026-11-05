@@ -9,10 +9,10 @@ import AnimateOnScroll from '@/components/motion/AnimateOnScroll';
 import { createMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Contact AVS Plumbing and Gas',
+  title: 'Contact Active Roofing Inc.',
   description:
-    'Call AVS Plumbing and Gas on +61 415 610 544 to discuss plumbing and gas fitting.',
-  pathname: '/contact/',
+    'Call Active Roofing Inc. on +1 310-408-4940 to discuss roofing and roofing.',
+  pathname: '/contact-roofing/',
 });
 
 export default function ContactPage() {
@@ -23,7 +23,7 @@ export default function ContactPage() {
         <TextureBackground variant="contact" className="opacity-30" />
 
         <div className="relative z-10 max-w-site mx-auto px-6 md:px-12">
-          <Breadcrumbs items={[{ name: 'Contact', path: '/contact/' }]} />
+          <Breadcrumbs items={[{ name: 'Contact', path: '/contact-roofing/' }]} />
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mt-8">
             <div className="lg:col-span-8">
@@ -31,9 +31,9 @@ export default function ContactPage() {
                 <span className="font-body text-13 text-forest-ink/60 block mb-3 uppercase tracking-wider font-medium">
                   Contact and quotes
                 </span>
-                <WordRevealH1 text="Contact AVS Plumbing and Gas." />
+                <WordRevealH1 text="Contact Active Roofing Inc.." />
                 <p className="font-body text-17 md:text-21 text-forest-ink/90 leading-relaxed mt-6 max-w-2xl">
-                  Call AVS Plumbing and Gas to discuss gas fitting, hot water, blocked drains, plumbing repairs and availability.
+                  Call Active Roofing Inc. to discuss roof repairs, leak repairs, replacement and availability.
                 </p>
               </AnimateOnScroll>
             </div>
@@ -56,7 +56,7 @@ export default function ContactPage() {
                     Contact us
                   </h2>
                   <a
-                    href="/quote/"
+                    href="/roofing-quote/"
                     className="mb-5 inline-flex min-h-11 items-center bg-brand px-5 font-body text-15 font-semibold text-white transition-colors hover:bg-brand-hover"
                   >
                     Request a quote
@@ -76,7 +76,7 @@ export default function ContactPage() {
                           {CLINIC_INFO.contact.phone}
                         </a>
                       </div>
-                      <span className="font-body text-13 text-forest font-medium">Plumbing enquiries</span>
+                      <span className="font-body text-13 text-forest font-medium">Roofing enquiries</span>
                     </div>
 
                     {/* Phone */}
@@ -110,7 +110,7 @@ export default function ContactPage() {
                     {CLINIC_INFO.primaryLocation.directions}
                   </address>
                   <div className="p-4 bg-mist/40 border-l-2 border-forest font-body text-13 text-forest-ink/80 leading-relaxed">
-                    Based in Cairns and serving Cairns and surrounding areas. Call to discuss availability.
+                    Based in Los Angeles and serving Los Angeles and surrounding areas. Call to discuss availability.
                   </div>
                 </div>
               </AnimateOnScroll>
@@ -145,7 +145,7 @@ export default function ContactPage() {
                       {CLINIC_INFO.name}
                     </h3>
                     <p className="font-body text-13 text-paper/80 leading-relaxed">
-                    Serving Cairns and surrounding areas from Cairns. Call to discuss your property.
+                    Serving Los Angeles and surrounding areas from Los Angeles. Call to discuss your property.
                     </p>
                   </div>
 
@@ -187,7 +187,7 @@ export default function ContactPage() {
             </div>
           </AnimateOnScroll>
           <AnimateOnScroll animation="fade-left" duration={0.8} delay={0.2}>
-            <Button href="/quote/" variant="lime" size="lg">
+            <Button href="/roofing-quote/" variant="lime" size="lg">
               Request a quote Online
             </Button>
           </AnimateOnScroll>

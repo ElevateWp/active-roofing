@@ -9,37 +9,37 @@ import MediaParallax from '@/components/motion/MediaParallax';
 import AnimateOnScroll from '@/components/motion/AnimateOnScroll';
 import Breadcrumbs from '@/components/layout/Breadcrumbs';
 import Button from '@/components/ui/Button';
-import PlumberCard from '@/components/sections/dentists/DentistCard';
+import RooferCard from '@/components/sections/dentists/DentistCard';
 import { CLINIC_INFO, DENTISTS } from '@/lib/avs-data';
 import { createMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = createMetadata({
-  title: 'About AVS Plumbing and Gas',
+  title: 'About Active Roofing Inc.',
   description:
-    'Learn about AVS Plumbing and Gas, its team and plumbing and gas fitting services in Cairns.',
-  pathname: '/about/',
+    'Learn about Active Roofing Inc., its team and roofing and roofing services in Los Angeles.',
+  pathname: '/about-roofing/',
 });
 
 const TIMELINE = [
   {
-    year: 'Cairns and surrounding areas',
-    title: 'Plumbing service',
-    description: 'AVS Plumbing and Gas helps with gas fitting, hot water systems, burst pipes, leak repairs, blocked drains and renovations.',
+    year: 'Los Angeles and surrounding areas',
+    title: 'Roofing service',
+    description: 'Active Roofing Inc. helps with roofing, roofing services, burst pipes, leak repairs, roof repairs and renovations.',
   },
 ];
 
 const APPROACH_STEPS = [
   {
-    title: 'Discuss your plumbing',
-    description: 'We discuss the plumbing, the work required and practical project details.',
+    title: 'Discuss your roofing',
+    description: 'We discuss the roofing, the work required and practical project details.',
   },
   {
     title: 'Agree the project scope',
-    description: 'Discuss the plumbing work, materials and timing before work begins.',
+    description: 'Discuss the roofing work, materials and timing before work begins.',
   },
   {
     title: 'Complete the agreed work',
-    description: 'The agreed plumbing work is completed with care.',
+    description: 'The agreed roofing work is completed with care.',
   },
   {
     title: 'Clear communication',
@@ -53,17 +53,17 @@ export default function AboutPage() {
       {/* SECTION 1: Introduction */}
       <section className="py-16 md:py-24 border-b border-mist">
         <div className="max-w-site mx-auto px-6 md:px-12">
-          <Breadcrumbs items={[{ name: 'About us', path: '/about/' }]} />
+          <Breadcrumbs items={[{ name: 'About us', path: '/about-roofing/' }]} />
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mt-8">
             <div className="lg:col-span-8">
               <AnimateOnScroll animation="fade-right" duration={0.8}>
                 <span className="font-body text-13 text-forest-ink/60 block mb-3 font-medium uppercase tracking-wider">
-                  About AVS Plumbing and Gas
+                  About Active Roofing Inc.
                 </span>
-                <WordRevealH1 text="Plumbing and gas fitting across Cairns." />
+                <WordRevealH1 text="Roofing and roofing across Los Angeles." />
                 <div className="mt-8">
-                  <ScrubbedParagraph text="AVS Plumbing and Gas helps with gas stove installation, gas hot water systems, burst pipes, leak repairs, blocked drains, bathroom and kitchen plumbing, and home renovations. Call Andy's team to discuss your job and request a quote." />
+                  <ScrubbedParagraph text="Active Roofing Inc. helps homeowners with roof repairs, leak repairs, roof replacement and installation. Call Ivan’s team to discuss your property and request a quote." />
                 </div>
               </AnimateOnScroll>
             </div>
@@ -73,7 +73,7 @@ export default function AboutPage() {
                 <div className="p-6 bg-paper border border-mist space-y-3 font-body text-13 text-forest-ink/80 shadow-sm">
                   <div className="flex justify-between border-b border-mist pb-2">
                     <span>Call</span>
-                    <span className="font-medium text-forest">+61 415 610 544</span>
+                    <span className="font-medium text-forest">+1 310-408-4940</span>
                   </div>
                 </div>
               </AnimateOnScroll>
@@ -91,7 +91,7 @@ export default function AboutPage() {
                 About the business
               </span>
               <h2 className="font-display text-33 md:text-41 text-paper">
-                Plumbing for your property
+                Roofing for your property
               </h2>
             </div>
           </AnimateOnScroll>
@@ -106,7 +106,7 @@ export default function AboutPage() {
               >
                 {/* Year Marker */}
                 <div className="absolute -left-[41px] md:-left-[57px] top-1 w-5 h-5 rounded-full bg-forest border-2 border-lime flex items-center justify-center" />
-                <span className="font-display text-21 text-[#667085] block mb-1">
+                <span className="font-display text-21 text-[#68747C] block mb-1">
                   {item.year}
                 </span>
                 <h3 className="font-display text-21 md:text-26 text-paper mb-2">
@@ -161,7 +161,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* SECTION 4: AVS Plumbing and Gas */}
+      {/* SECTION 4: Active Roofing Inc. */}
       <section className="py-20 md:py-32 border-b border-mist">
         <div className="max-w-site mx-auto px-6 md:px-12">
           <AnimateOnScroll animation="fade-up" duration={0.8}>
@@ -171,11 +171,11 @@ export default function AboutPage() {
                   Our team
                 </span>
                 <h2 className="font-display text-33 md:text-41 text-forest-ink">
-                  AVS Plumbing and Gas
+                  Active Roofing Inc.
                 </h2>
               </div>
               <Link
-                href="/team/"
+                href="/roofing-team/"
                 className="font-body text-15 text-forest font-medium hover:underline underline-offset-4"
               >
                 About the business →
@@ -184,14 +184,14 @@ export default function AboutPage() {
           </AnimateOnScroll>
 
           <div className="grid grid-cols-1 max-w-sm mx-auto">
-            {DENTISTS.map((plumber, idx) => (
-              <PlumberCard key={plumber.id} plumber={plumber} offsetY={idx === 1} />
+            {DENTISTS.map((roofer, idx) => (
+              <RooferCard key={roofer.id} roofer={roofer} offsetY={idx === 1} />
             ))}
           </div>
         </div>
       </section>
 
-      {/* SECTION 5: Plumbing services Work */}
+      {/* SECTION 5: Roofing services Work */}
       <section className="py-20 md:py-32 border-b border-mist overflow-hidden">
         <div className="max-w-site mx-auto px-6 md:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -201,10 +201,10 @@ export default function AboutPage() {
                   Our services
                 </span>
                 <h2 className="font-display text-33 md:text-41 text-forest-ink mb-6">
-                  Plumbing work for your property
+                  Roofing work for your property
                 </h2>
                 <p className="font-body text-15 md:text-17 text-forest-ink/80 leading-relaxed mb-6">
-                  Contact AVS Plumbing and Gas to discuss your plumbing, gas fitting, the work required and the next steps.
+                  Contact Active Roofing Inc. to discuss your roofing, roofing, the work required and the next steps.
                 </p>
                 <div className="space-y-2 font-body text-13 text-forest-ink/70">
                   <div className="flex items-center gap-2">
@@ -224,15 +224,15 @@ export default function AboutPage() {
                 <div className="relative aspect-[4/3] bg-mist overflow-hidden border border-mist shadow-sm">
                   <MediaParallax speed={0.08} className="w-full h-full">
                     <Image
-                      src="/images/plumbing-technician.jpg"
-                      alt="Plumbing work in progress"
+                      src="/images/roofing-projects/active-roofing-project-18.jpg"
+                      alt="Roofing work in progress"
                       fill
                       sizes="(max-width: 1024px) 100vw, 50vw"
                       className="object-cover"
                     />
                   </MediaParallax>
                   <div className="absolute bottom-3 left-3 bg-paper/95 backdrop-blur-sm text-forest-ink font-body text-13 px-3 py-1 font-medium border border-mist/50">
-                    Plumbing
+                    Roofing
                   </div>
                 </div>
               </AnimateOnScroll>
@@ -259,42 +259,42 @@ export default function AboutPage() {
             <AnimateOnScroll animation="zoom-in" delay={0.1}>
               <div className="relative aspect-[4/3] bg-mist overflow-hidden border border-mist shadow-sm">
                 <Image
-                  src="/images/plumbing-repair.jpg"
-                  alt="Illustrative plumbing"
+                  src="/images/roofing-projects/active-roofing-project-02.jpg"
+                  alt="Illustrative roofing"
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-cover"
                 />
                 <div className="absolute bottom-2 left-2 bg-paper/95 backdrop-blur-sm text-forest-ink font-body text-13 px-2.5 py-0.5 border border-mist/50">
-                  Illustrative plumbing image
+                  Illustrative roofing image
                 </div>
               </div>
             </AnimateOnScroll>
             <AnimateOnScroll animation="zoom-in" delay={0.2}>
               <div className="relative aspect-[4/3] bg-mist overflow-hidden border border-mist shadow-sm">
                 <Image
-                  src="/images/plumbing-pipes.jpg"
-                  alt="Illustrative plumbing image"
+                  src="/images/roofing-projects/active-roofing-project-17.jpg"
+                  alt="Illustrative roofing image"
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-cover"
                 />
                 <div className="absolute bottom-2 left-2 bg-paper/95 backdrop-blur-sm text-forest-ink font-body text-13 px-2.5 py-0.5 border border-mist/50">
-                  Plumbing services
+                  Roofing services
                 </div>
               </div>
             </AnimateOnScroll>
             <AnimateOnScroll animation="zoom-in" delay={0.3}>
               <div className="relative aspect-[4/3] bg-mist overflow-hidden border border-mist shadow-sm">
                 <Image
-                  src="/images/plumbing-hot-water.jpg"
-                  alt="Illustrative plumbing"
+                  src="/images/roofing-projects/active-roofing-project-11.jpg"
+                  alt="Illustrative roofing"
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-cover"
                 />
                 <div className="absolute bottom-2 left-2 bg-paper/95 backdrop-blur-sm text-forest-ink font-body text-13 px-2.5 py-0.5 border border-mist/50">
-                  Plumbing repairs
+                  Roofing repairs
                 </div>
               </div>
             </AnimateOnScroll>
@@ -320,10 +320,10 @@ export default function AboutPage() {
           </AnimateOnScroll>
           <AnimateOnScroll animation="fade-left" duration={0.8} delay={0.2}>
             <div className="flex flex-wrap items-center gap-4">
-              <Button href="/quote/" variant="lime" size="lg">
+              <Button href="/roofing-quote/" variant="lime" size="lg">
                 Request a quote
               </Button>
-              <Button href="/contact/" variant="ghost-light" size="lg">
+              <Button href="/contact-roofing/" variant="ghost-light" size="lg">
                 Contact us
               </Button>
             </div>

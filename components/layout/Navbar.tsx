@@ -36,18 +36,18 @@ export default function Navbar() {
     <>
     <header
       data-site-header
-      className="fixed top-0 left-0 right-0 z-50 bg-[#202124] text-white py-2.5 sm:py-3 border-b border-[#202124] shadow-sm"
+      className="fixed top-0 left-0 right-0 z-50 bg-[#20262B] text-white py-2.5 sm:py-3 border-b border-[#20262B] shadow-sm"
     >
       <div className="mx-auto flex max-w-site items-center justify-between px-4 sm:px-6 md:px-12">
         {/* Brand Logo - compact on mobile */}
         <Link
           href="/"
           className="group flex items-center no-underline focus-visible:outline-offset-4 flex-shrink-0 min-w-0"
-          aria-label="AVS Plumbing and Gas"
+          aria-label="Active Roofing Inc."
         >
           <Image
-            src="/images/avs-logo-cropped.png"
-            alt="AVS Plumbing and Gas logo"
+            src="/images/active-roofing-logo.png"
+            alt="Active Roofing Inc. logo"
             width={240}
             height={88}
             priority
@@ -84,7 +84,7 @@ export default function Navbar() {
             {/* Dropdown Panel with Pure White Background and Smooth Shadow */}
             {servicesDropdownOpen && (
               <div className="absolute top-full -left-4 pt-2 w-64 z-50 animate-fade-in">
-                <div className="p-2 bg-[#202124] text-white border border-[#202124] shadow-[0_12px_36px_rgba(17,17,17,0.08)] rounded-2xl">
+                <div className="p-2 bg-[#20262B] text-white border border-[#20262B] shadow-[0_12px_36px_rgba(17,17,17,0.08)] rounded-2xl">
                   <div className="space-y-0.5">
                     {SERVICES.map((s) => (
                       <Link
@@ -92,8 +92,8 @@ export default function Navbar() {
                         href={`/${s.slug}/`}
                         className={`block px-3.5 py-2 text-14 font-body transition-all duration-200 rounded-xl ${
                           pathname === `/${s.slug}/`
-                            ? 'bg-[#202124] text-white font-semibold shadow-xs'
-                            : 'text-white/85 hover:bg-[#00A8E8] hover:text-white hover:translate-x-1'
+                            ? 'bg-[#20262B] text-white font-semibold shadow-xs'
+                            : 'text-white/85 hover:bg-[#00D492] hover:text-white hover:translate-x-1'
                         }`}
                       >
                         <span className="block font-medium">{s.navLabel}</span>
@@ -106,9 +106,9 @@ export default function Navbar() {
           </div>
 
           <Link
-            href="/about/"
+            href="/about-roofing/"
             className={`font-body text-15 py-2 transition-colors ${
-              pathname === '/about/'
+              pathname === '/about-roofing/'
                 ? 'text-white font-semibold'
                 : 'text-white/80 hover:text-white font-medium'
             }`}
@@ -117,9 +117,9 @@ export default function Navbar() {
           </Link>
 
           <Link
-            href="/reviews/"
+            href="/roofing-reviews/"
             className={`font-body text-15 py-2 transition-colors ${
-              pathname?.startsWith('/reviews')
+              pathname?.startsWith('/roofing-reviews')
                 ? 'text-white font-semibold'
                 : 'text-white/80 hover:text-white font-medium'
             }`}
@@ -128,9 +128,9 @@ export default function Navbar() {
           </Link>
 
           <Link
-            href="/team/"
+            href="/roofing-team/"
             className={`font-body text-15 py-2 transition-colors ${
-              pathname?.startsWith('/team')
+              pathname?.startsWith('/roofing-team')
                 ? 'text-white font-semibold'
                 : 'text-white/80 hover:text-white font-medium'
             }`}
@@ -139,20 +139,20 @@ export default function Navbar() {
           </Link>
 
           <Link
-            href="/plumbing-advice/"
+            href="/roofing-advice/"
             className={`font-body text-15 py-2 transition-colors ${
-              pathname?.startsWith('/plumbing-advice')
+              pathname?.startsWith('/roofing-advice')
                 ? 'text-white font-semibold'
                 : 'text-white/80 hover:text-white font-medium'
             }`}
           >
-            Plumbing advice
+            Roofing advice
           </Link>
 
           <Link
-            href="/contact/"
+            href="/contact-roofing/"
             className={`font-body text-15 py-2 transition-colors ${
-              pathname === '/contact/'
+              pathname === '/contact-roofing/'
                 ? 'text-white font-semibold'
                 : 'text-white/80 hover:text-white font-medium'
             }`}
@@ -163,8 +163,8 @@ export default function Navbar() {
 
         <div className="flex items-center gap-2 sm:gap-3 flex-shrink-0">
           <Link
-            href="/quote/"
-            className="hidden xl:inline-flex h-10 w-[176px] items-center justify-center rounded-md border border-white bg-white px-3 font-body text-13 font-semibold text-[#202124] transition-colors hover:border-[#F3F6F9] hover:bg-[#F3F6F9] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white whitespace-nowrap"
+            href="/roofing-quote/"
+            className="hidden xl:inline-flex h-10 w-[176px] items-center justify-center rounded-md border border-white bg-white px-3 font-body text-13 font-semibold text-[#20262B] transition-colors hover:border-[#F4F6F7] hover:bg-[#F4F6F7] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white whitespace-nowrap"
           >
             <span>Get a quote</span>
           </Link>
@@ -173,7 +173,7 @@ export default function Navbar() {
           <button
             type="button"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="xl:hidden p-2 text-white focus-visible:outline-offset-2 flex items-center justify-center cursor-pointer rounded-lg hover:bg-[#202124] transition-colors"
+            className="xl:hidden p-2 text-white focus-visible:outline-offset-2 flex items-center justify-center cursor-pointer rounded-lg hover:bg-[#20262B] transition-colors"
             aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
             aria-controls="mobile-navigation"
             aria-expanded={mobileMenuOpen}
@@ -185,7 +185,7 @@ export default function Navbar() {
                 }`}
               />
               <span
-                className={`w-full h-[2px] bg-[#202124] transition-opacity duration-200 ${
+                className={`w-full h-[2px] bg-[#20262B] transition-opacity duration-200 ${
                   mobileMenuOpen ? 'opacity-0' : 'opacity-100'
                 }`}
               />
@@ -205,7 +205,7 @@ export default function Navbar() {
         id="mobile-navigation"
         aria-label="Mobile navigation"
         aria-hidden={!mobileMenuOpen}
-        className={`xl:hidden fixed inset-x-0 top-[95px] sm:top-[110px] md:top-[121px] bottom-0 bg-[#202124] text-white border-t border-[#202124] overflow-y-auto overscroll-contain px-4 sm:px-6 py-5 sm:py-6 flex flex-col justify-between z-[999] transition-all duration-300 ease-in-out shadow-2xl ${
+        className={`xl:hidden fixed inset-x-0 top-[95px] sm:top-[110px] md:top-[121px] bottom-0 bg-[#20262B] text-white border-t border-[#20262B] overflow-y-auto overscroll-contain px-4 sm:px-6 py-5 sm:py-6 flex flex-col justify-between z-[999] transition-all duration-300 ease-in-out shadow-2xl ${
           mobileMenuOpen
             ? 'opacity-100 pointer-events-auto translate-y-0'
             : 'opacity-0 pointer-events-none -translate-y-4'
@@ -244,8 +244,8 @@ export default function Navbar() {
                     }}
                     className={`flex min-h-11 items-center rounded-md px-3 font-body text-15 transition-colors ${
                       pathname === `/${s.slug}/`
-                        ? 'bg-[#202124] font-semibold text-white'
-                        : 'text-white hover:bg-[#00A8E8] hover:text-[#17191C]'
+                        ? 'bg-[#20262B] font-semibold text-white'
+                        : 'text-white hover:bg-[#00D492] hover:text-[#1C252B]'
                     }`}
                   >
                     {s.navLabel}
@@ -255,55 +255,55 @@ export default function Navbar() {
             )}
           </div>
 
-          <div className="pt-4 border-t border-[#DCE3E9] flex flex-col space-y-3">
+          <div className="pt-4 border-t border-[#D9DEE2] flex flex-col space-y-3">
             <Link
-              href="/about/"
+              href="/about-roofing/"
               onClick={() => setMobileMenuOpen(false)}
               className={`font-body text-16 transition-colors ${
-                pathname === '/about/' ? 'text-white font-semibold' : 'text-white hover:text-[#667085]'
+                pathname === '/about-roofing/' ? 'text-white font-semibold' : 'text-white hover:text-[#68747C]'
               }`}
             >
               About us
             </Link>
             <Link
-              href="/reviews/"
+              href="/roofing-reviews/"
               onClick={() => setMobileMenuOpen(false)}
               className={`font-body text-16 transition-colors ${
-                pathname?.startsWith('/reviews') ? 'text-white font-semibold' : 'text-white hover:text-[#667085]'
+                pathname?.startsWith('/roofing-reviews') ? 'text-white font-semibold' : 'text-white hover:text-[#68747C]'
               }`}
             >
               Reviews
             </Link>
             <Link
-              href="/team/"
+              href="/roofing-team/"
               onClick={() => setMobileMenuOpen(false)}
               className={`font-body text-16 transition-colors ${
-                pathname?.startsWith('/team') ? 'text-white font-semibold' : 'text-white hover:text-[#667085]'
+                pathname?.startsWith('/roofing-team') ? 'text-white font-semibold' : 'text-white hover:text-[#68747C]'
               }`}
             >
               Our Team
             </Link>
             <Link
-              href="/quote/"
+              href="/roofing-quote/"
               onClick={() => setMobileMenuOpen(false)}
               className={`font-body text-16 font-semibold text-white hover:underline`}
             >
               Request a quote
             </Link>
             <Link
-              href="/plumbing-advice/"
+              href="/roofing-advice/"
               onClick={() => setMobileMenuOpen(false)}
               className={`font-body text-16 transition-colors ${
-                pathname?.startsWith('/plumbing-advice') ? 'text-white font-semibold' : 'text-white hover:text-[#667085]'
+                pathname?.startsWith('/roofing-advice') ? 'text-white font-semibold' : 'text-white hover:text-[#68747C]'
               }`}
             >
-              Plumbing advice
+              Roofing advice
             </Link>
             <Link
-              href="/contact/"
+              href="/contact-roofing/"
               onClick={() => setMobileMenuOpen(false)}
               className={`font-body text-16 transition-colors ${
-                pathname === '/contact/' ? 'text-white font-semibold' : 'text-white hover:text-[#667085]'
+                pathname === '/contact-roofing/' ? 'text-white font-semibold' : 'text-white hover:text-[#68747C]'
               }`}
             >
               Contact
@@ -311,9 +311,9 @@ export default function Navbar() {
           </div>
         </div>
 
-        <div className="pt-6 mt-6 border-t border-[#DCE3E9] flex flex-col gap-3 pb-8">
+        <div className="pt-6 mt-6 border-t border-[#D9DEE2] flex flex-col gap-3 pb-8">
           <Button
-            href="/quote/"
+            href="/roofing-quote/"
             variant="forest"
             size="lg"
             className="w-full"
@@ -323,7 +323,7 @@ export default function Navbar() {
           </Button>
           <a
             href={`tel:${CLINIC_INFO.contact.phone.replace(/[^0-9+]/g, '')}`}
-            className="text-center font-body text-15 text-white py-2 font-semibold hover:text-[#667085] transition-colors"
+            className="text-center font-body text-15 text-white py-2 font-semibold hover:text-[#68747C] transition-colors"
           >
             Call: {CLINIC_INFO.contact.phone}
           </a>

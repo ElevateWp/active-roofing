@@ -11,22 +11,23 @@ import { BASE_URL, generateLocalBusinessSchema } from '@/lib/seo';
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: 'AVS Plumbing and Gas | Cairns plumber and gas fitter',
+    default: 'Active Roofing Inc. | Roofing Contractor in Wilmington, CA',
     template: '%s',
   },
   description:
-    'AVS Plumbing and Gas provides plumbing, gas fitting, hot water repairs, leak repairs and drainage across Cairns. Call +61 415 610 544.',
+    'Active Roofing Inc. provides roof repairs, leak repairs, roof replacements and installations in Wilmington and Los Angeles. Call +1 310-408-4940.',
   keywords: [
-    'AVS Plumbing and Gas',
-    'plumbing repairs Cairns',
-    'blocked drain clearing Cairns and surrounding areas',
-    'hot water system repairs Cairns',
-    'leak repairs Cairns',
+    'Active Roofing Inc.',
+    'roofing repairs Los Angeles',
+    'roof repair Wilmington and Los Angeles',
+    'roof replacement Los Angeles',
+    'leak repairs Los Angeles',
   ],
-  authors: [{ name: 'AVS Plumbing and Gas Pty Ltd' }],
+  authors: [{ name: 'Active Roofing Inc.' }],
   icons: {
     icon: [
-      { url: '/images/avs-logo-cropped.png', type: 'image/png' },
+      { url: '/favicon-32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon-192.png', sizes: '192x192', type: 'image/png' },
     ],
     shortcut: [{ url: '/favicon.ico', type: 'image/x-icon' }],
     apple: [{ url: '/favicon-180.png', sizes: '180x180', type: 'image/png' }],
@@ -39,7 +40,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en-AU" className="scroll-smooth">
+    <html lang="en-US" className="scroll-smooth">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
@@ -48,7 +49,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="bg-paper text-forest-ink min-h-screen flex flex-col selection:bg-[#F3F6F9] selection:text-[#17191C]">
+      <body className="bg-paper text-forest-ink min-h-screen flex flex-col selection:bg-[#F4F6F7] selection:text-[#1C252B]">
         <PagePreloader />
         <SiteTextReveal />
         <JsonLd data={generateLocalBusinessSchema()} />
@@ -66,3 +67,4 @@ export default function RootLayout({
     </html>
   );
 }
+

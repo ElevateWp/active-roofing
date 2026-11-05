@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: BlogPostProps): Promise<Metad
   return createMetadata({
     title: `${post.title} | Property tips`,
     description: post.excerpt,
-    pathname: `/plumbing-advice/${post.slug}/`,
+    pathname: `/roofing-advice/${post.slug}/`,
     image: post.leadImage,
   });
 }
@@ -48,7 +48,7 @@ export default function SingleBlogPage({ params }: BlogPostProps) {
     title: p.title,
     subtitle: `${p.category} • ${p.readTime}`,
     description: p.excerpt,
-    href: `/plumbing-advice/${p.slug}/`,
+    href: `/roofing-advice/${p.slug}/`,
     theme: idx % 2 === 1 ? 'forest' : 'paper',
   }));
 
@@ -62,7 +62,7 @@ export default function SingleBlogPage({ params }: BlogPostProps) {
     dateModified: post.lastUpdated,
     author: {
       '@type': 'Person',
-      name: author?.name || 'AVS Plumbing and Gas',
+      name: author?.name || 'Active Roofing Inc.',
     },
     publisher: {
       '@type': 'Organization',
@@ -86,9 +86,9 @@ export default function SingleBlogPage({ params }: BlogPostProps) {
         <div className="max-w-site mx-auto px-6 md:px-12">
           <Breadcrumbs
             items={[
-              { name: 'Property tips', path: '/plumbing-advice/' },
-              { name: post.category, path: '/plumbing-advice/' },
-              { name: post.title, path: `/plumbing-advice/${post.slug}/` },
+              { name: 'Property tips', path: '/roofing-advice/' },
+              { name: post.category, path: '/roofing-advice/' },
+              { name: post.title, path: `/roofing-advice/${post.slug}/` },
             ]}
           />
 
@@ -122,7 +122,7 @@ export default function SingleBlogPage({ params }: BlogPostProps) {
                   </div>
                   <div>
                     <Link
-                      href={`/team/${author.slug}/`}
+                      href={`/roofing-team/${author.slug}/`}
                       className="font-display text-17 text-forest-ink hover:text-forest font-medium block"
                     >
                       {author.name}
@@ -231,7 +231,7 @@ export default function SingleBlogPage({ params }: BlogPostProps) {
             </div>
           </AnimateOnScroll>
           <AnimateOnScroll animation="fade-left" duration={0.8} delay={0.2}>
-            <Button href="/quote/" variant="lime" size="lg">
+            <Button href="/roofing-quote/" variant="lime" size="lg">
               Request a quote
             </Button>
           </AnimateOnScroll>

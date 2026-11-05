@@ -30,10 +30,10 @@ export default function HomeLocation() {
                   {CLINIC_INFO.name}
                 </h3>
                 <p className="font-body text-15 text-forest-ink/90 leading-relaxed mb-2">
-                  Plumbing and gas fitting
+                  Roofing and roofing
                 </p>
                 <p className="font-body text-15 md:text-17 text-forest-ink/90 leading-relaxed mb-4">
-                  Based in Kewarra Beach, AVS Plumbing and Gas serves Cairns and surrounding areas. Call to discuss your plumbing or gas fitting needs and current availability.
+                  Based in Wilmington, Active Roofing Inc. serves Los Angeles and surrounding areas. Call to discuss your roofing or roofing needs and current availability.
                 </p>
                 {CLINIC_INFO.primaryLocation.landmarks && (
                   <p className="font-body text-13 text-forest-ink/70 leading-relaxed">
@@ -42,7 +42,7 @@ export default function HomeLocation() {
                 )}
                 <div className="flex flex-wrap gap-2 mt-4">
                   {CLINIC_INFO.identityHighlights.map((highlight) => (
-                    <span key={highlight} className="bg-[#F3F6F9] border border-[#DCE3E9] px-3 py-1.5 text-12 text-[#17191C]">
+                    <span key={highlight} className="bg-[#F4F6F7] border border-[#D9DEE2] px-3 py-1.5 text-12 text-[#1C252B]">
                       {highlight}
                     </span>
                   ))}
@@ -75,7 +75,7 @@ export default function HomeLocation() {
                 >
                   Call now
                 </Button>
-                  <Button href="/contact/" variant="forest" size="md">
+                  <Button href="/contact-roofing/" variant="forest" size="md">
                   Contact us
                 </Button>
               </div>
@@ -87,14 +87,14 @@ export default function HomeLocation() {
             <AnimateOnScroll animation="fade-left" duration={0.85}>
               <div className="relative aspect-[16/10] bg-mist overflow-hidden border border-mist shadow-sm">
                 <Image
-                  src="/images/plumbing-technician.jpg"
-                  alt="Plumbing project"
+                  src="/images/roofing-projects/active-roofing-project-18.jpg"
+                  alt="Roofing project"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
                     className="object-cover"
                 />
                 <div className="absolute bottom-3 left-3 bg-paper/95 backdrop-blur-sm text-forest-ink font-body text-13 px-3 py-1 font-medium border border-mist/50">
-                  AVS Plumbing and Gas
+                  Active Roofing Inc.
                 </div>
               </div>
             </AnimateOnScroll>
@@ -103,10 +103,10 @@ export default function HomeLocation() {
               <div className="bg-paper border border-mist p-6 shadow-sm flex flex-col justify-between">
                 <div>
                   <span className="font-body text-13 text-forest block mb-1 font-medium uppercase tracking-wider">
-                    Plumbing services
+                    Roofing services
                   </span>
                   <h3 className="font-display text-21 text-forest-ink mb-2">
-                    Plumbing repairs for your property
+                    Roofing repairs for your property
                   </h3>
                   <p className="font-body text-13 text-forest-ink/80 mb-3 leading-relaxed">
                     Call to discuss the property service you need.
@@ -122,7 +122,7 @@ export default function HomeLocation() {
                     {CLINIC_INFO.contact.phone}
                   </span>
                   <Button
-                    href="/contact/"
+                    href="/contact-roofing/"
                     variant="forest"
                     size="sm"
                   >

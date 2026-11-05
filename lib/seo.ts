@@ -18,7 +18,7 @@ export function createMetadata({
 }): Metadata {
   const url = `${BASE_URL}${pathname}`;
   const fullTitle = `${title} | ${CLINIC_INFO.name}`;
-  const defaultImage = `${BASE_URL}/images/avs-logo-cropped.png`;
+  const defaultImage = `${BASE_URL}/images/active-roofing-logo.png`;
 
   return {
     title: fullTitle,
@@ -31,7 +31,7 @@ export function createMetadata({
       description,
       url,
       siteName: CLINIC_INFO.name,
-      locale: 'en_AU',
+      locale: 'en_US',
       type: 'website',
       images: [
         {
@@ -65,7 +65,7 @@ export function createMetadata({
 export function generateLocalBusinessSchema() {
   return {
     '@context': 'https://schema.org',
-    '@type': 'Plumber',
+    '@type': 'Roofer',
     '@id': `${BASE_URL}/#business`,
     name: CLINIC_INFO.name,
     legalName: CLINIC_INFO.legalName,
@@ -110,10 +110,10 @@ export function generateServiceSchema(serviceName: string, description: string, 
     '@type': 'Service',
     name: serviceName,
     description: description,
-    serviceType: 'Plumbing repairs and plumbing services',
+    serviceType: 'Roofing repairs and roofing services',
     url: `${BASE_URL}${url}`,
     provider: {
-      '@type': 'Plumber',
+      '@type': 'Roofer',
       name: CLINIC_INFO.name,
     },
   };

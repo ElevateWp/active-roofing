@@ -12,50 +12,50 @@ import AnimateOnScroll from '@/components/motion/AnimateOnScroll';
 import JsonLd from '@/components/ui/JsonLd';
 import { createMetadata } from '@/lib/seo';
 
-interface PlumberProfileProps {
+interface RooferProfileProps {
   params: { slug: string };
 }
 
 export async function generateStaticParams() {
-  return DENTISTS.map((plumber) => ({
-    slug: plumber.slug,
+  return DENTISTS.map((roofer) => ({
+    slug: roofer.slug,
   }));
 }
 
-export async function generateMetadata({ params }: PlumberProfileProps): Promise<Metadata> {
-  const plumber = DENTISTS.find((d) => d.slug === params.slug);
-  if (!plumber) return {};
+export async function generateMetadata({ params }: RooferProfileProps): Promise<Metadata> {
+  const roofer = DENTISTS.find((d) => d.slug === params.slug);
+  if (!roofer) return {};
 
   return createMetadata({
-    title: `${plumber.name} | ${plumber.title}`,
-    description: plumber.bio,
-    pathname: `/team/${plumber.slug}/`,
-    image: plumber.image,
+    title: `${roofer.name} | ${roofer.title}`,
+    description: roofer.bio,
+    pathname: `/roofing-team/${roofer.slug}/`,
+    image: roofer.image,
   });
 }
 
-export default function SinglePlumberPage({ params }: PlumberProfileProps) {
-  const plumber = DENTISTS.find((d) => d.slug === params.slug);
-  if (!plumber) notFound();
+export default function SingleRooferPage({ params }: RooferProfileProps) {
+  const roofer = DENTISTS.find((d) => d.slug === params.slug);
+  if (!roofer) notFound();
 
-  const relatedServices = SERVICES.filter((s) => s.assignedDentistId === plumber.id);
+  const relatedServices = SERVICES.filter((s) => s.assignedDentistId === roofer.id);
 
   const personSchema = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: plumber.name,
-    jobTitle: plumber.title,
-    description: plumber.bio,
-    image: plumber.image,
+    name: roofer.name,
+    jobTitle: roofer.title,
+    description: roofer.bio,
+    image: roofer.image,
     worksFor: {
       '@type': 'LocalBusiness',
       name: CLINIC_INFO.name,
     },
-    alumniOf: plumber.education.map((e) => ({
+    alumniOf: roofer.education.map((e) => ({
       '@type': 'EducationalOrganization',
       name: e,
     })),
-    knowsAbout: plumber.specialties,
+    knowsAbout: roofer.specialties,
   };
 
   return (
@@ -67,8 +67,8 @@ export default function SinglePlumberPage({ params }: PlumberProfileProps) {
         <div className="max-w-site mx-auto px-6 md:px-12">
           <Breadcrumbs
             items={[
-              { name: 'AVS Plumbing and Gas team', path: '/team/' },
-              { name: plumber.name, path: `/team/${plumber.slug}/` },
+              { name: 'Active Roofing Inc. team', path: '/roofing-team/' },
+              { name: roofer.name, path: `/roofing-team/${roofer.slug}/` },
             ]}
           />
 
@@ -78,17 +78,17 @@ export default function SinglePlumberPage({ params }: PlumberProfileProps) {
               <AnimateOnScroll animation="fade-right" duration={0.8}>
                 <div className="relative aspect-[4/5] bg-mist overflow-hidden border border-mist shadow-sm">
                   <Image
-                    src={plumber.image}
-                    alt={`Photo of ${plumber.name}`}
+                    src={roofer.image}
+                    alt={`Photo of ${roofer.name}`}
                     fill
                     priority
                     sizes="(max-width: 1024px) 100vw, 40vw"
                     className="object-contain bg-paper p-5"
                   />
                 </div>
-                {plumber.experienceYears > 0 && <div className="mt-4 p-4 bg-mist/40 border border-mist flex justify-between text-13 font-body text-forest-ink/80">
+                {roofer.experienceYears > 0 && <div className="mt-4 p-4 bg-mist/40 border border-mist flex justify-between text-13 font-body text-forest-ink/80">
                   <span>Team experience:</span>
-                  <span className="font-medium text-forest">{plumber.experienceYears}+ years of experience</span>
+                  <span className="font-medium text-forest">{roofer.experienceYears}+ years of experience</span>
                 </div>}
               </AnimateOnScroll>
             </div>
@@ -97,29 +97,29 @@ export default function SinglePlumberPage({ params }: PlumberProfileProps) {
             <div className="lg:col-span-7">
               <AnimateOnScroll animation="fade-left" duration={0.8}>
                 <span className="font-body text-13 text-forest-ink/60 block mb-2 font-medium uppercase tracking-wider">
-                  {plumber.qualifications}
+                  {roofer.qualifications}
                 </span>
-                <WordRevealH1 text={plumber.name} className="mb-4" />
+                <WordRevealH1 text={roofer.name} className="mb-4" />
                 <span className="font-display text-21 text-forest block mb-8">
-                  {plumber.title}
+                  {roofer.title}
                 </span>
 
-                <ScrubbedParagraph text={plumber.bio} className="mb-8" />
+                <ScrubbedParagraph text={roofer.bio} className="mb-8" />
 
                 <div className="p-6 bg-mist/30 border-l-2 border-forest mb-8 shadow-sm">
                   <span className="font-body text-13 text-forest font-medium uppercase tracking-wider block mb-2">
                     How we work
                   </span>
                   <p className="font-body text-15 text-forest-ink/90 leading-relaxed italic">
-                    “{plumber.philosophy}”
+                    “{roofer.philosophy}”
                   </p>
                 </div>
 
                 <div className="flex flex-wrap items-center gap-4">
-                  <Button href="/quote/" variant="forest" size="lg">
-                    Request a quote from {plumber.name}
+                  <Button href="/roofing-quote/" variant="forest" size="lg">
+                    Request a quote from {roofer.name}
                   </Button>
-                  <Button href="/team/" variant="ghost" size="lg">
+                  <Button href="/roofing-team/" variant="ghost" size="lg">
                     Back to Our team
                   </Button>
                 </div>
@@ -130,16 +130,16 @@ export default function SinglePlumberPage({ params }: PlumberProfileProps) {
       </section>
 
       {/* Academic Credentials & Memberships */}
-      {(plumber.education.length > 0 || plumber.memberships.length > 0) && <section className="py-20 md:py-32 border-b border-mist">
+      {(roofer.education.length > 0 || roofer.memberships.length > 0) && <section className="py-20 md:py-32 border-b border-mist">
         <div className="max-w-site mx-auto px-6 md:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
-            {plumber.education.length > 0 && <div className="lg:col-span-6">
+            {roofer.education.length > 0 && <div className="lg:col-span-6">
               <AnimateOnScroll animation="fade-up" duration={0.8}>
                 <h2 className="font-display text-26 md:text-33 text-forest-ink mb-6">
-                  Plumbing services
+                  Roofing services
                 </h2>
                 <ul className="space-y-4 font-body text-15 text-forest-ink/80">
-                  {plumber.education.map((edu, idx) => (
+                  {roofer.education.map((edu, idx) => (
                     <li key={idx} className="flex items-start gap-3 p-4 border border-mist bg-paper shadow-sm">
                       <span className="text-forest font-bold mt-0.5">•</span>
                       <span>{edu}</span>
@@ -149,13 +149,13 @@ export default function SinglePlumberPage({ params }: PlumberProfileProps) {
               </AnimateOnScroll>
             </div>}
 
-            {plumber.memberships.length > 0 && <div className="lg:col-span-6">
+            {roofer.memberships.length > 0 && <div className="lg:col-span-6">
               <AnimateOnScroll animation="fade-up" duration={0.8} delay={0.15}>
                 <h2 className="font-display text-26 md:text-33 text-forest-ink mb-6">
-                  About AVS Plumbing and Gas
+                  About Active Roofing Inc.
                 </h2>
                 <ul className="space-y-4 font-body text-15 text-forest-ink/80">
-                  {plumber.memberships.map((mem, idx) => (
+                  {roofer.memberships.map((mem, idx) => (
                     <li key={idx} className="flex items-start gap-3 p-4 border border-mist bg-paper shadow-sm">
                       <span className="text-forest font-bold mt-0.5">•</span>
                       <span>{mem}</span>
@@ -178,7 +178,7 @@ export default function SinglePlumberPage({ params }: PlumberProfileProps) {
                   Areas of Work
                 </span>
                 <h2 className="font-display text-33 md:text-41 text-forest-ink">
-                  Services from {plumber.name}
+                  Services from {roofer.name}
                 </h2>
               </div>
             </AnimateOnScroll>
@@ -218,12 +218,12 @@ export default function SinglePlumberPage({ params }: PlumberProfileProps) {
                 Request a quote
               </span>
               <h2 className="font-display text-33 md:text-41 text-paper">
-                Want to request a quote for your project with {plumber.name}?
+                Want to request a quote for your project with {roofer.name}?
               </h2>
             </div>
           </AnimateOnScroll>
           <AnimateOnScroll animation="fade-left" duration={0.8} delay={0.2}>
-            <Button href="/quote/" variant="lime" size="lg">
+            <Button href="/roofing-quote/" variant="lime" size="lg">
               Request a quote
             </Button>
           </AnimateOnScroll>

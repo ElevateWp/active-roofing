@@ -17,8 +17,8 @@ const REASONS = [
     description: 'You will know the quote, agreed work and next steps.',
   },
   {
-    title: 'Plumbing for your property',
-    description: 'AVS Plumbing and Gas provides plumbing and gas fitting across Cairns. Call to discuss your project and the work required.',
+    title: 'Roofing for your property',
+    description: 'Active Roofing Inc. provides roof repairs, installation and replacement. Call to discuss your project and the work required.',
   },
 ];
 
@@ -34,7 +34,7 @@ export default function HomeWhyUs() {
                 How we work
               </span>
               <h2 className="font-display text-26 sm:text-33 md:text-41 text-forest-ink mb-8 md:mb-10 leading-tight">
-                Plumbing discussed clearly
+                Roofing discussed clearly
               </h2>
 
               <div className="divide-y divide-mist">
@@ -65,38 +65,38 @@ export default function HomeWhyUs() {
                 <div className="col-span-2 relative aspect-[16/10] bg-mist overflow-hidden border border-mist shadow-sm">
                   <MediaParallax speed={0.06} className="w-full h-full">
                     <Image
-                    src="/images/plumbing-technician.jpg"
-                    alt="Plumbing project"
+                    src="/images/roofing-projects/active-roofing-project-18.jpg"
+                    alt="Roofing project"
                       fill
                       sizes="(max-width: 1024px) 100vw, 50vw"
                       className="object-cover"
                     />
                   </MediaParallax>
-                  <div className="absolute bottom-3 left-3 bg-[#008CCB]/90 backdrop-blur-sm text-[#17191C] font-body text-12 px-3 py-1 font-medium">
-                    Plumbing
+                  <div className="absolute bottom-3 left-3 bg-[#00B878]/90 backdrop-blur-sm text-[#1C252B] font-body text-12 px-3 py-1 font-medium">
+                    Roofing
                   </div>
                 </div>
                 {/* Additional home repairs imagery */}
                 <div className="col-span-2 sm:col-span-1 relative aspect-square bg-mist overflow-hidden border border-mist shadow-sm">
                   <Image
-                    src="/images/plumbing-repair.jpg"
-                    alt="Plumbing project"
+                    src="/images/roofing-projects/active-roofing-project-02.jpg"
+                    alt="Roofing project"
                     fill
                     sizes="(max-width: 640px) 100vw, 25vw"
                     className="object-cover"
                   />
                 </div>
-                {/* Plumbing project detail */}
-                <div className="col-span-2 sm:col-span-1 relative aspect-square bg-[#F3F6F9] overflow-hidden border border-mist shadow-sm">
+                {/* Roofing project detail */}
+                <div className="col-span-2 sm:col-span-1 relative aspect-square bg-[#F4F6F7] overflow-hidden border border-mist shadow-sm">
                   <Image
-                    src="/images/plumbing-pipes.jpg"
-                    alt="Plumbing"
+                    src="/images/roofing-projects/active-roofing-project-17.jpg"
+                    alt="Roofing"
                     fill
                     sizes="(max-width: 640px) 100vw, 25vw"
                     className="object-cover object-top"
                   />
-                  <div className="absolute bottom-0 left-0 right-0 bg-[#008CCB]/80 text-[#17191C] font-body text-12 px-3 py-2 text-center">
-                     Plumbing
+                  <div className="absolute bottom-0 left-0 right-0 bg-[#00B878]/80 text-[#1C252B] font-body text-12 px-3 py-2 text-center">
+                     Roofing
                   </div>
                 </div>
               </div>

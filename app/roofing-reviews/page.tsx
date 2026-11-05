@@ -10,8 +10,8 @@ import { createMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = createMetadata({
   title: 'Customer reviews',
-  description: 'Read customer reviews for AVS Plumbing and Gas.',
-  pathname: '/reviews/',
+  description: 'Read customer reviews for Active Roofing Inc.',
+  pathname: '/roofing-reviews/',
 });
 
 export default function TestimonialsPage() {
@@ -20,12 +20,12 @@ export default function TestimonialsPage() {
       <section className="relative overflow-hidden border-b border-mist py-16 md:py-24">
         <TextureBackground variant="blog" className="opacity-20" />
         <div className="relative z-10 mx-auto max-w-site px-6 md:px-12">
-          <Breadcrumbs items={[{ name: 'Reviews', path: '/reviews/' }]} />
+          <Breadcrumbs items={[{ name: 'Reviews', path: '/roofing-reviews/' }]} />
           <div className="mt-8 max-w-3xl">
             <AnimateOnScroll animation="fade-right" duration={0.8}>
-              <span className="mb-3 block font-body text-13 font-medium uppercase tracking-wider text-forest-ink/60">AVS Plumbing and Gas</span>
+              <span className="mb-3 block font-body text-13 font-medium uppercase tracking-wider text-forest-ink/60">Active Roofing Inc.</span>
               <WordRevealH1 text="Customer reviews" />
-              <p className="mt-6 max-w-2xl font-body text-17 leading-relaxed text-forest-ink/90 md:text-21">50 Google reviews for {CLINIC_INFO.name}.</p>
+              <p className="mt-6 max-w-2xl font-body text-17 leading-relaxed text-forest-ink/90 md:text-21">8 Google reviews for {CLINIC_INFO.name}.</p>
             </AnimateOnScroll>
           </div>
         </div>
@@ -39,7 +39,7 @@ export default function TestimonialsPage() {
             </div>
             <div className="border-l-2 border-brand pl-4">
               <span className="block font-body text-13 font-medium uppercase tracking-wider text-forest-light">Google reviews</span>
-              <span className="mt-1 block font-body text-12 text-forest-light">50 reviews</span>
+              <span className="mt-1 block font-body text-12 text-forest-light">8 reviews</span>
             </div>
           </div>
           <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
@@ -60,8 +60,8 @@ export default function TestimonialsPage() {
       </section>
       <section className="bg-forest py-14 text-paper md:py-20">
         <div className="mx-auto flex max-w-site flex-col items-start justify-between gap-6 px-6 md:flex-row md:items-center md:px-12">
-          <div><span className="mb-2 block font-body text-13 font-semibold uppercase tracking-wider text-paper/65">AVS Plumbing and Gas</span><h2 className="font-display text-26 md:text-33">Need plumbing or gas fitting?</h2></div>
-          <Link href="/quote/" className="inline-flex min-h-12 items-center justify-center border border-paper bg-paper px-6 font-body text-15 font-semibold text-forest transition-colors hover:bg-softBlue">Request a quote</Link>
+          <div><span className="mb-2 block font-body text-13 font-semibold uppercase tracking-wider text-paper/65">Active Roofing Inc.</span><h2 className="font-display text-26 md:text-33">Need roofing or roofing?</h2></div>
+          <Link href="/roofing-quote/" className="inline-flex min-h-12 items-center justify-center border border-paper bg-paper px-6 font-body text-15 font-semibold text-forest transition-colors hover:bg-softBlue">Request a quote</Link>
         </div>
       </section>
     </div>

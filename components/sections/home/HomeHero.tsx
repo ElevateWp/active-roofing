@@ -49,7 +49,7 @@ export default function HomeHero() {
   return (
     <div
       data-slipstream-demo
-      className="-mt-[88px] sm:-mt-[100px] md:-mt-[112px] relative w-full bg-white border-b border-[#DCE3E9] overflow-clip"
+      className="-mt-[88px] sm:-mt-[100px] md:-mt-[112px] relative w-full bg-white border-b border-[#D9DEE2] overflow-clip"
       style={{
         width: "100%",
         containerType: "inline-size",
@@ -74,8 +74,8 @@ export default function HomeHero() {
           min-height:48px;
           padding:0 28px;
           gap:20px;
-          background:#17191C;
-          border:1px solid #008CCB;
+          background:#1C252B;
+          border:1px solid #00B878;
           border-radius:9999px;
           color:#ffffff;
           font-size:14px;
@@ -85,28 +85,28 @@ export default function HomeHero() {
           transition:all .2s ease;
         }
         [data-slipstream-demo] [data-gp-enter]:hover{
-          background:#008CCB;
+          background:#00B878;
           box-shadow:0 8px 26px rgba(17,17,17,0.36);
           transform:translateY(-1px);
         }
         [data-slipstream-demo] [data-gp-enter]:focus-visible{
-          outline:2px solid #17191C;
+          outline:2px solid #1C252B;
           outline-offset:4px;
         }
         [data-slipstream-demo] [data-gp-touch-picker]{top:auto;bottom:18px;left:50%;}
         [data-slipstream-demo] [data-gp-select]{
-          border:1px solid #DCE3E9;
+          border:1px solid #D9DEE2;
           border-radius:8px;
           font-size:12px;
-          color:#17191C;
+          color:#1C252B;
           background:#ffffff;
         }
-        [data-ch-hero-header]{position:absolute;inset:clamp(24px,4.5cqw,48px) clamp(24px,5cqw,64px) auto;display:flex;align-items:center;justify-content:space-between;gap:20px;color:#17191C;}
+        [data-ch-hero-header]{position:absolute;inset:clamp(24px,4.5cqw,48px) clamp(24px,5cqw,64px) auto;display:flex;align-items:center;justify-content:space-between;gap:20px;color:#1C252B;}
         [data-ch-hero-brand]{font-size:19px;font-weight:700;letter-spacing:-.045em;}
-        [data-ch-hero-category]{font-size:12px;line-height:1.5;color:#667085;text-align:right;}
-        [data-ch-hero-intro]{position:absolute;inset:auto 24px calc(100% - var(--gp-word-top,35%) + 32px);margin:0;max-width:none;text-align:center;color:#667085;font-size:13px;font-weight:500;line-height:1.5;letter-spacing:.01em;}
-        [data-ch-hero-support]{position:absolute;inset:calc(var(--gp-word-bottom,50%) + 32px) 24px auto;margin:0 auto;max-width:42ch;text-align:center;color:#667085;font-size:16px;font-weight:400;line-height:1.5;text-wrap:balance;}
-        [data-sublime-scroll]{position:absolute;inset:auto 24px 7%;text-align:center;color:#667085;font-size:11px;letter-spacing:.01em;}
+        [data-ch-hero-category]{font-size:12px;line-height:1.5;color:#68747C;text-align:right;}
+        [data-ch-hero-intro]{position:absolute;inset:auto 24px calc(100% - var(--gp-word-top,35%) + 32px);margin:0;max-width:none;text-align:center;color:#68747C;font-size:13px;font-weight:500;line-height:1.5;letter-spacing:.01em;}
+        [data-ch-hero-support]{position:absolute;inset:calc(var(--gp-word-bottom,50%) + 32px) 24px auto;margin:0 auto;max-width:42ch;text-align:center;color:#68747C;font-size:16px;font-weight:400;line-height:1.5;text-wrap:balance;}
+        [data-sublime-scroll]{position:absolute;inset:auto 24px 7%;text-align:center;color:#68747C;font-size:11px;letter-spacing:.01em;}
         @media(any-pointer:coarse){[data-sublime-scroll]{bottom:12%;}}
         @media(any-pointer:coarse){[data-sublime-scroll]{bottom:13%;}}
         @container(max-width:450px){
@@ -124,7 +124,7 @@ export default function HomeHero() {
         [data-slipstream-demo] [data-gp-content]{
           padding:6rem clamp(1.25rem,5cqw,5rem) 6.5rem;
           font-family:inherit;
-          background:#17191C;
+          background:#1C252B;
           color:#ffffff;
         }
         [data-slipstream-demo] section,[data-slipstream-demo] [data-gp-caption]{font-family:inherit;}
@@ -166,14 +166,14 @@ export default function HomeHero() {
         }
         [data-slipstream-feature] p{
           margin:.55rem 0 0;
-          color:#DCE3E9;
+          color:#D9DEE2;
           font-size:.9375rem;
           line-height:1.55;
         }
         [data-slipstream-no]{
           display:inline-block;
           margin-right:.7rem;
-          color:#17191C;
+          color:#1C252B;
           font:700 .8125rem ui-monospace,monospace;
           letter-spacing:.08em;
           transform:translateY(-.1em);
@@ -188,27 +188,27 @@ export default function HomeHero() {
 
       {face ? (
         <GlyphPortal
-          word="AVS PLUMBING"
+          word="ACTIVE ROOFING"
           fontFamily={face}
           fontWeight={700}
           style={{
             fontFamily: face,
             "--gp-paper": "#FFFFFF",
-            "--gp-ink": "#17191C",
-            "--gp-field": "#202124",
+            "--gp-ink": "#1C252B",
+            "--gp-field": "#20262B",
             "--gp-foreground": "#FFFFFF",
           }}
           scrollLength={2.2}
           interactive={true}
           annotations={false}
-          enterLabel="Explore plumbing"
+          enterLabel="Explore roofing"
           underlay={
             <div
               className="absolute inset-0 overflow-hidden pointer-events-none"
               aria-hidden="true"
             >
               <Image
-                src="/images/plumbing-technician.jpg"
+                src="/images/roofing-projects/active-roofing-project-18.jpg"
                 alt=""
                 fill
                 priority
@@ -231,9 +231,9 @@ export default function HomeHero() {
                 transform: "scale(var(--gp-field-scale,1))",
               }}
             >
-              {/* Plumbing photo at low opacity inside the glyph zoom destination */}
+              {/* Roofing photo at low opacity inside the glyph zoom destination */}
               <Image
-                src="/images/plumbing-repair.jpg"
+                src="/images/roofing-projects/active-roofing-project-02.jpg"
                 alt=""
                 fill
                 className="object-cover object-center"
@@ -252,12 +252,12 @@ export default function HomeHero() {
           front={
             <>
               <div data-ch-hero-header>
-                <span data-ch-hero-brand>AVS Plumbing and Gas</span>
-                <span data-ch-hero-category>Kewarra Beach, Queensland<br />Call {phone}</span>
+                <span data-ch-hero-brand>Active Roofing Inc.</span>
+                <span data-ch-hero-category>Wilmington, California<br />Call {phone}</span>
               </div>
-              <p data-ch-hero-intro>Plumbing repairs across Cairns and surrounding areas.</p>
+              <p data-ch-hero-intro>Roof repairs and installations across Wilmington and Los Angeles.</p>
               <p data-ch-hero-support>
-                Gas fitting, hot water systems, burst pipes, leaks, blocked drains and home renovations. Call Andy to discuss the problem.
+                Roof repairs, leak repairs, replacements and installations. Call Ivan to discuss your project.
               </p>
               <span data-sublime-scroll>Scroll to explore ↓</span>
             </>
@@ -265,27 +265,27 @@ export default function HomeHero() {
         >
           <div data-slipstream-copy>
             <h2>
-              Plumbing repairs across Cairns and surrounding areas.
+              Roof repairs and installations across Wilmington and Los Angeles.
             </h2>
 
             <div data-slipstream-features>
               <div data-slipstream-feature>
                 <h3>
                   <span data-slipstream-no>01</span>
-                  Plumbing
+                  Roofing
                 </h3>
                 <p>
-                  Fast help with plumbing repairs and leaks.
+                  Professional roof repairs with clear communication.
                 </p>
               </div>
 
               <div data-slipstream-feature>
                 <h3>
                   <span data-slipstream-no>02</span>
-                  Blocked drain clearing and repairs
+                  Roof replacement and installation
                 </h3>
                 <p>
-                  Hot water systems, blocked drains and bathroom plumbing.
+                  Discuss roofing for your home, ADU or garage.
                 </p>
               </div>
 
@@ -295,7 +295,7 @@ export default function HomeHero() {
                   Talk through your property
                 </h3>
                 <p>
-                  Serving Cairns, Brinsmead and nearby suburbs.
+                  Serving Wilmington, Los Angeles and nearby communities.
                 </p>
               </div>
             </div>
@@ -303,7 +303,7 @@ export default function HomeHero() {
             <div className="flex flex-wrap items-center gap-4 pt-4">
               <Link
                 href={`tel:${CLINIC_INFO.contact.phone.replace(/[^0-9+]/g, '')}`}
-                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#008CCB] px-7 font-body text-sm font-semibold text-white shadow-[0_6px_20px_rgba(17,17,17,0.28)] transition-all hover:bg-[#00A8E8] hover:shadow-[0_8px_26px_rgba(17,17,17,0.36)]"
+                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#00B878] px-7 font-body text-sm font-semibold text-white shadow-[0_6px_20px_rgba(17,17,17,0.28)] transition-all hover:bg-[#00D492] hover:shadow-[0_8px_26px_rgba(17,17,17,0.36)]"
               >
                 Call now
                 <ArrowRight size={16} />
@@ -312,14 +312,14 @@ export default function HomeHero() {
                 href={`tel:${CLINIC_INFO.contact.phone.replace(/[^0-9+]/g, '')}`}
                 className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-white/30 bg-white/10 px-6 font-body text-sm font-semibold text-white transition-all hover:bg-white/20"
               >
-                <Phone size={15} className="text-[#F3F6F9]" />
+                <Phone size={15} className="text-[#F4F6F7]" />
                 Contact us
               </a>
               <a
-                href="/services/"
+                href="/roofing-services/"
                 className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-white/20 bg-white/5 px-6 font-body text-sm font-medium text-white/90 hover:bg-white/15 hover:text-white transition-all"
               >
-                <span>Explore plumbing services</span>
+                <span>Explore roofing services</span>
                 <ArrowDown size={15} />
               </a>
             </div>
@@ -332,7 +332,7 @@ export default function HomeHero() {
             height: "80vh",
             display: "grid",
             placeItems: "center",
-            color: "#17191C",
+            color: "#1C252B",
             fontSize: 14,
             fontWeight: 500,
           }}

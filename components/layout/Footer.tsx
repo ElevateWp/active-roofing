@@ -11,10 +11,10 @@ export default function Footer() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 pb-16 border-b border-mist/20">
           <div className="lg:col-span-6">
             <div className="flex items-center gap-4 mb-5">
-              <div className="w-40 h-14 sm:w-48 sm:h-[70px] bg-[#202124] rounded-xl p-2 flex items-center justify-center flex-shrink-0 shadow-md">
+              <div className="w-40 h-14 sm:w-48 sm:h-[70px] bg-[#20262B] rounded-xl p-2 flex items-center justify-center flex-shrink-0 shadow-md">
                 <Image
-                  src="/images/avs-logo-cropped.png"
-                  alt="AVS Plumbing and Gas logo"
+                  src="/images/active-roofing-logo.png"
+                  alt="Active Roofing Inc. logo"
                   width={220}
                   height={80}
                   className="object-contain w-full h-full"
@@ -22,18 +22,18 @@ export default function Footer() {
               </div>
               <div className="flex flex-col">
                 <span className="font-display text-24 md:text-30 font-medium leading-tight">
-                  AVS Plumbing and Gas
+                  Active Roofing Inc.
                 </span>
                 <span className="font-body text-13 text-paper/70 font-medium">
-                  Plumbing services
+                  Roofing services
                 </span>
               </div>
             </div>
             <p className="font-body text-16 text-paper/80 leading-relaxed max-w-xl">
-              Plumbing, gas fitting, hot water and drainage for your property. Call to discuss your project.
+              Roof repairs, leak repairs and roofing installations for your property. Call to discuss your project.
             </p>
             <div className="mt-6 flex flex-wrap gap-4 text-13 text-paper/60">
-              <a href={`tel:${CLINIC_INFO.contact.phone.replace(/[^0-9+]/g, '')}`} className="hover:text-paper">{CLINIC_INFO.contact.phone}</a>{CLINIC_INFO.contact.website && <a href={CLINIC_INFO.contact.website} target="_blank" rel="noopener noreferrer" className="hover:text-paper">AVS Plumbing and Gas</a>}
+              <a href={`tel:${CLINIC_INFO.contact.phone.replace(/[^0-9+]/g, '')}`} className="hover:text-paper">{CLINIC_INFO.contact.phone}</a>{CLINIC_INFO.contact.website && <a href={CLINIC_INFO.contact.website} target="_blank" rel="noopener noreferrer" className="hover:text-paper">Active Roofing Inc.</a>}
               {CLINIC_INFO.contact.email && <a href={`mailto:${CLINIC_INFO.contact.email}`} className="hover:text-paper">{CLINIC_INFO.contact.email}</a>}
             </div>
           </div>
@@ -41,10 +41,10 @@ export default function Footer() {
           <div className="lg:col-span-6 lg:pl-12 flex flex-col justify-between">
             <div className="p-6 bg-paper/5 border border-mist/20 rounded-none shadow-sm">
               <span className="font-body text-13 text-lime block mb-2 font-semibold uppercase tracking-wider">
-                Gas fitting, plumbing and hot water
+                Roof repair, replacement and installation
               </span>
               <p className="font-body text-15 text-paper/90 mb-4">
-                Need plumbing or gas fitting help? Call our Cairns team to discuss the work required.
+                Need roofing or roofing help? Call our Los Angeles team to discuss the work required.
               </p>
               <div className="flex flex-wrap items-center gap-4">
                 <a
@@ -56,7 +56,7 @@ export default function Footer() {
                   Call: {CLINIC_INFO.contact.phone}
                 </a>
                 <Link
-                  href="/quote/"
+                  href="/roofing-quote/"
                   className="font-body text-13 text-paper/80 underline underline-offset-4 hover:text-paper"
                 >
                   Request a quote
@@ -90,18 +90,18 @@ export default function Footer() {
           {/* Column 2: technical Team */}
           <div className="col-span-1">
             <span className="font-body text-13 text-paper/40 uppercase tracking-wider block mb-4 font-semibold">
-              AVS Plumbing and Gas
+              Active Roofing Inc.
             </span>
             <ul className="space-y-2.5 font-body text-15">
               <li>
-                <Link href="/about/" className="text-paper/80 hover:text-lime transition-colors">
-                  AVS Plumbing and Gas
+                <Link href="/about-roofing/" className="text-paper/80 hover:text-lime transition-colors">
+                  Active Roofing Inc.
                 </Link>
               </li>
               {DENTISTS.map((d) => (
                 <li key={d.slug}>
                   <Link
-                    href={`/team/${d.slug}/`}
+                    href={`/roofing-team/${d.slug}/`}
                     className="text-paper/80 hover:text-lime transition-colors"
                   >
                     {d.name}
@@ -118,32 +118,32 @@ export default function Footer() {
             </span>
             <ul className="space-y-2.5 font-body text-15">
               <li>
-                <Link href="/about/" className="text-paper/80 hover:text-lime transition-colors">
+                <Link href="/about-roofing/" className="text-paper/80 hover:text-lime transition-colors">
                   About us
                 </Link>
               </li>
               <li>
-                <Link href="/services/" className="text-paper/80 hover:text-lime transition-colors">
-                  Emergency plumbing, hot water and drainage
+                <Link href="/roofing-services/" className="text-paper/80 hover:text-lime transition-colors">
+                  Roof repairs, leak repairs and replacement
                 </Link>
               </li>
               <li>
-                <Link href="/plumbing-advice/" className="text-paper/80 hover:text-lime transition-colors">
-                  Plumbing advice
+                <Link href="/roofing-advice/" className="text-paper/80 hover:text-lime transition-colors">
+                  Roofing advice
                 </Link>
               </li>
               <li>
-                <Link href="/quote/" className="text-paper/80 hover:text-lime transition-colors">
+                <Link href="/roofing-quote/" className="text-paper/80 hover:text-lime transition-colors">
                   Request a quote
                 </Link>
               </li>
               <li>
-                <Link href="/contact/" className="text-paper/80 hover:text-lime transition-colors">
+                <Link href="/contact-roofing/" className="text-paper/80 hover:text-lime transition-colors">
                   Contact
                 </Link>
               </li>
               <li>
-                <Link href="/quote/" className="text-paper/80 hover:text-lime transition-colors">
+                <Link href="/roofing-quote/" className="text-paper/80 hover:text-lime transition-colors">
                   Request a quote
                 </Link>
               </li>
@@ -170,7 +170,7 @@ export default function Footer() {
               <div>
                 <span className="text-paper/50 block text-13">Address:</span>
                 <address className="not-italic leading-relaxed text-13 text-paper/70">
-                  29 Poolwood Rd, Kewarra Beach QLD 4879, Australia
+                  {CLINIC_INFO.primaryLocation.directions}
                 </address>
               </div>
             </div>
@@ -183,10 +183,11 @@ export default function Footer() {
             © {new Date().getFullYear()} {CLINIC_INFO.legalName}. All rights reserved.
           </div>
           <div className="flex items-center gap-6">
-            <a href="/" className="hover:text-paper">AVS Plumbing and Gas</a>
+            <a href="/" className="hover:text-paper">Active Roofing Inc.</a>
           </div>
         </div>
       </div>
     </footer>
   );
 }
+

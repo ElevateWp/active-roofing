@@ -11,8 +11,8 @@ import { createMetadata } from '@/lib/seo';
 export const metadata: Metadata = createMetadata({
   title: 'Request a quote',
   description:
-    'Contact AVS Plumbing and Gas to discuss your plumbing or gas fitting project and request a quote. Call +61 415 610 544.',
-  pathname: '/quote/',
+    'Contact Active Roofing Inc. to discuss your roofing or roofing project and request a quote. Call +1 310-408-4940.',
+  pathname: '/roofing-quote/',
 });
 
 const BOOKING_STEPS = [
@@ -34,7 +34,7 @@ const BOOKING_STEPS = [
   {
     step: 4,
     title: 'Complete the agreed work',
-    description: 'The agreed plumbing repair or other plumbing work is completed at your property.',
+    description: 'The agreed roofing repair or other roofing work is completed at your property.',
   },
 ];
 
@@ -44,13 +44,13 @@ export default function BookAppointmentPage() {
       {/* SECTION 1: Appointment Introduction */}
       <section className="py-16 md:py-24 border-b border-mist">
         <div className="max-w-site mx-auto px-6 md:px-12">
-          <Breadcrumbs items={[{ name: 'Request a quote', path: '/quote/' }]} />
+          <Breadcrumbs items={[{ name: 'Request a quote', path: '/roofing-quote/' }]} />
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mt-8 items-start">
             <div className="lg:col-span-8">
               <AnimateOnScroll animation="fade-right" duration={0.8}>
                 <span className="font-body text-13 text-forest-ink/60 block mb-3 uppercase tracking-wider font-medium">
-                  Plumbing enquiry
+                  Roofing enquiry
                 </span>
                 <WordRevealH1 text="Request a quote." />
                 <div className="mt-8">
@@ -94,7 +94,7 @@ export default function BookAppointmentPage() {
                     Next steps
                   </h2>
                   <p className="font-body text-15 text-forest-ink/80 leading-relaxed mb-6">
-                    We will discuss your plumbing and explain the next steps.
+                    We will discuss your roofing and explain the next steps.
                   </p>
                 </div>
               </AnimateOnScroll>

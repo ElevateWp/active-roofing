@@ -5,7 +5,7 @@ import HomeStats from '@/components/sections/home/HomeStats';
 import HomeReviews from '@/components/sections/home/HomeReviews';
 import PinnedHorizontalTrack, { HorizontalTrackItem } from '@/components/motion/PinnedHorizontalTrack';
 import HomeWhyUs from '@/components/sections/home/HomeWhyUs';
-import HomePlumbers from '@/components/sections/home/HomeDentists';
+import HomeRoofers from '@/components/sections/home/HomeDentists';
 import HomeFeaturedServices from '@/components/sections/home/HomeFeaturedTreatments';
 import HomeBeforeAfter from '@/components/sections/home/HomeBeforeAfter';
 import HomeGallery from '@/components/sections/home/HomeGallery';
@@ -17,9 +17,9 @@ import { SERVICES } from '@/lib/avs-data';
 import { createMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = createMetadata({
-  title: 'AVS Plumbing and Gas',
+  title: 'Roof repair in Wilmington, CA',
   description:
-    'Gas fitting, gas stove installation, hot water repairs, leak repairs and plumbing services in Cairns. Call +61 415 610 544.',
+    'Roof repair, leak repair, replacement and installation in Wilmington and Los Angeles. Call +1 310-408-4940.',
   pathname: '/',
 });
 
@@ -44,10 +44,10 @@ export default function HomePage() {
       {/* SECTION 2A: Customer reviews */}
       <HomeReviews />
 
-      {/* SECTION 3: Plumbing services */}
+      {/* SECTION 3: Roofing services */}
       <PinnedHorizontalTrack
         items={serviceTrackItems}
-        title="Plumbing services"
+        title="Roofing services"
       />
 
       {/* Signature Brand Device 2 of 4: Full-Bleed Section Divider */}
@@ -55,11 +55,11 @@ export default function HomePage() {
         <TextureBackground variant="divider" className="opacity-30" />
       </div>
 
-      {/* SECTION 4: Why choose AVS Plumbing and Gas */}
+      {/* SECTION 4: Why choose Active Roofing Inc. */}
       <HomeWhyUs />
 
       {/* SECTION 5: About the business */}
-      <HomePlumbers />
+      <HomeRoofers />
 
       {/* SECTION 6: Services em destaque */}
       <HomeFeaturedServices />
@@ -67,7 +67,7 @@ export default function HomePage() {
       {/* SECTION 7: Before & After (Draggable Slider - Orchestrated Moment 3) */}
       <HomeBeforeAfter />
 
-      {/* SECTION 9: Plumbing services Projects */}
+      {/* SECTION 9: Roofing services Projects */}
       <HomeGallery />
 
       {/* SECTION 10: Frequently asked questions */}
@@ -81,3 +81,4 @@ export default function HomePage() {
     </div>
   );
 }
+

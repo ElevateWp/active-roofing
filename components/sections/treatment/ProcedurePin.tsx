@@ -14,7 +14,7 @@ export interface JobStep {
   title: string;
   duration: string;
   description: string;
-  plumbingDetails: string;
+  roofingDetails: string;
 }
 
 interface JobPinProps {
@@ -26,8 +26,8 @@ interface JobPinProps {
 
 export default function JobPin({
   steps,
-  title = 'Plumbing project steps',
-  subtitle = 'Plumbing project steps',
+  title = 'Roofing project steps',
+  subtitle = 'Roofing project steps',
   className = '',
 }: JobPinProps) {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -80,7 +80,7 @@ export default function JobPin({
                 Estimated duration: {steps[activeStep]?.duration}
               </div>
               <p className="font-body text-15 text-forest-ink/80 leading-relaxed mb-6">
-                {steps[activeStep]?.plumbingDetails}
+                {steps[activeStep]?.roofingDetails}
               </p>
 
               {/* Step Progress Vertical Timeline */}
@@ -132,7 +132,7 @@ export default function JobPin({
                 <div className="p-3.5 sm:p-4 bg-mist/40 border-l-2 border-forest">
                   <span className="font-body text-13 text-forest-ink/80 block">
                     <strong className="text-forest font-medium">Detalhes:</strong>{' '}
-                    {step.plumbingDetails}
+                    {step.roofingDetails}
                   </span>
                 </div>
               </div>
