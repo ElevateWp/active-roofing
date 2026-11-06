@@ -93,6 +93,8 @@ export type TiltedGridImage = {
   src: string;
   /** Only used if you drop the decorative service; the band is aria-hidden. */
   alt?: string;
+  /** Optional caption rendered with the corresponding moving image tile. */
+  caption?: string;
 };
 
 export type TiltedGridHeroProps = {
@@ -313,6 +315,17 @@ export function TiltedGridHero({
                         height: u(1),
                       }}
                     />
+                  ) : null}
+                  {img?.caption ? (
+                    <div
+                      aria-hidden="true"
+                      className="absolute bottom-0 flex h-[36%] items-center justify-center bg-[#20262B]/90 text-center text-white"
+                      style={{ left: u(-k * share), width: u(aspectRatio) }}
+                    >
+                      <span className="whitespace-nowrap px-2 font-body text-[10px] font-semibold leading-tight sm:text-xs">
+                        {img.caption}
+                      </span>
+                    </div>
                   ) : null}
                 </div>
               ))}

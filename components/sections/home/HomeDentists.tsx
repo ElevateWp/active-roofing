@@ -3,10 +3,10 @@ import Link from 'next/link';
 import { TiltedGridHero } from '@/components/ui/tilted-grid-hero';
 
 const TEAM_IMAGES = [
-  { src: '/images/roofing-projects/active-roofing-project-18.jpg', alt: 'Roofing project photo shared by Active Roofing Inc.' },
-  { src: '/images/roofing-projects/active-roofing-project-02.jpg', alt: 'Roofing project photo shared by Active Roofing Inc.' },
-  { src: '/images/roofing-projects/active-roofing-project-17.jpg', alt: 'Roofing project photo shared by Active Roofing Inc.' },
-  { src: '/images/roofing-projects/active-roofing-project-11.jpg', alt: 'Roofing project photo shared by Active Roofing Inc.' },
+  { src: '/images/team-stock-01.jpg', alt: 'Representative stock portrait', caption: 'Roofing Team Lead' },
+  { src: '/images/team-stock-02.jpg', alt: 'Representative stock portrait', caption: 'Roof Repair Specialist' },
+  { src: '/images/team-stock-03.jpg', alt: 'Representative stock portrait', caption: 'Installation Specialist' },
+  { src: '/images/team-stock-04.jpg', alt: 'Representative stock portrait', caption: 'Project Coordinator' },
 ];
 
 export default function HomeRoofers() {
@@ -27,14 +27,14 @@ export default function HomeRoofers() {
           <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-b from-paper via-paper/10 via-30% to-paper/85" />
           <div className="relative z-20 flex h-full flex-col items-center px-5 py-10 text-center md:py-14">
             <span className="font-body text-13 font-medium uppercase tracking-[0.18em] text-forest-ink/60">
-              Roofing service
+              Our Team
             </span>
             <h2 className="mt-3 max-w-3xl font-display text-26 text-balance text-forest-ink md:text-41">
               Active Roofing Inc.
             </h2>
             <div className="mt-auto flex flex-col items-center pb-1">
               <p className="max-w-lg text-balance font-body text-15 leading-relaxed text-forest-ink/70">
-                Ivan and the Active Roofing team are praised by customers for prompt service, clear explanations, tidy workmanship and dependable roof repairs and installations.
+                Representative stock portraits illustrate roofing roles. They are not photos of confirmed Active Roofing employees.
               </p>
               <Link
                 href="/roofing-team/"
@@ -49,6 +49,7 @@ export default function HomeRoofers() {
     </section>
   );
 }
+
 
 
 
