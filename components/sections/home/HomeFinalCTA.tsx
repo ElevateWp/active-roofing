@@ -21,7 +21,7 @@ export default function HomeFinalCTA() {
 
         <AnimateOnScroll animation="zoom-in" duration={0.85} delay={0.3}>
           <div className="flex flex-wrap items-center justify-center gap-4">
-            <Button href="/roofing-quote/" variant="lime" size="lg">
+            <Button href="/roofing-quote/" variant="paper" size="lg">
               Request a quote
             </Button>
             <Button
@@ -37,3 +37,4 @@ export default function HomeFinalCTA() {
     </section>
   );
 }
+
